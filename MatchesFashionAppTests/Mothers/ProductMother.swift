@@ -10,6 +10,15 @@ class ProductMother {
         return ProductResource(json: JSON(data))
     }
 
+    class func productsResource() -> ProductsResource {
+        let data: Data = FileHelper().createData(from: "products", ofType: "json")!
+        return ProductsResource(json: JSON(data))
+    }
+
+    class func emptyProductsResource() -> ProductsResource {
+        return ProductsResource(json: JSON(emptyProductsJsonData()))
+    }
+
     class func emptyProduct() -> ProductResource {
         return ProductResource(json: JSON("{}".data(using: .utf8)!))
     }

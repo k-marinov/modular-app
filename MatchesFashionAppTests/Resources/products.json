@@ -1,0 +1,83 @@
+{
+    "results": [
+        {
+            "primaryImageMap": {
+                "medium": {
+                    "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_medium.jpg"
+                }
+            },
+            "code": "1232802",
+            "price": {
+                "percentageDiscount": "",
+                "currencyIso": "GBP",
+                "taxIncluded": "",
+                "formattedWasPrice": "£0.00",
+                "priceType": "BUY",
+                "value": 3550.0,
+                "formattedWasPriceWithoutDecimals": "£0",
+                "wasPrice": 0.0,
+                "maxQuantity": "",
+                "minQuantity": "",
+                "formattedValue": "£3,550.00",
+                "formattedPriceWithoutDecimals": "£3,550"
+            },
+            "name": "Floral-print silk-twill maxi dress ",
+            "designer": {
+                "name": "Gucci"
+            }
+        },
+        {
+            "primaryImageMap": {
+                "medium": {
+                    "url": "//assetsprx.matchesfashion.com/img/product/1219840_1_medium.jpg"
+                }
+            },
+            "code": "1219840",
+            "price": {
+                "percentageDiscount": "",
+                "currencyIso": "GBP",
+                "taxIncluded": "",
+                "formattedWasPrice": "£0.00",
+                "priceType": "BUY",
+                "value": 1995.0,
+                "formattedWasPriceWithoutDecimals": "£0",
+                "wasPrice": 0.0,
+                "maxQuantity": "",
+                "minQuantity": "",
+                "formattedValue": "£1,995.00",
+                "formattedPriceWithoutDecimals": "£1,995"
+            },
+            "name": "Checked-insert cotton trench coat",
+            "designer": {
+                "name": "Loewe"
+            }
+        },
+        {
+            "primaryImageMap": {
+                "medium": {
+                    "url": "//assetsprx.matchesfashion.com/img/product/1232701_1_medium.jpg"
+                }
+            },
+            "code": "1232701",
+            "price": {
+                "percentageDiscount": "",
+                "currencyIso": "GBP",
+                "taxIncluded": "",
+                "formattedWasPrice": "£0.00",
+                "priceType": "BUY",
+                "value": 450.0,
+                "formattedWasPriceWithoutDecimals": "£0",
+                "wasPrice": 0.0,
+                "maxQuantity": "",
+                "minQuantity": "",
+                "formattedValue": "£450.00",
+                "formattedPriceWithoutDecimals": "£450"
+            },
+            "name": "Fisherman striped turn-up denim jeans",
+            "designer": {
+                "name": "Loewe"
+            }
+        }
+    ]
+}
+
