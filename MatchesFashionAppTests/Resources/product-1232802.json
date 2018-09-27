@@ -1,0 +1,343 @@
+{
+    "summary": "",
+    "productReferences": "",
+    "titleOverride": "",
+    "slugVisibleOnPDP": false,
+    "primaryImageMap": {
+        "thumbnail": {
+            "galleryIndex": "",
+            "imageType": "PRIMARY",
+            "format": "thumbnail",
+            "altText": "Gucci Floral-print silk-twill maxi dress ",
+            "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_thumbnail.jpg"
+        },
+        "large": {
+            "galleryIndex": "",
+            "imageType": "PRIMARY",
+            "format": "large",
+            "altText": "Gucci Floral-print silk-twill maxi dress ",
+            "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_large.jpg"
+        },
+        "medium": {
+            "galleryIndex": "",
+            "imageType": "PRIMARY",
+            "format": "medium",
+            "altText": "Gucci Floral-print silk-twill maxi dress ",
+            "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_medium.jpg"
+        }
+    },
+    "lookbookDescription": "",
+    "sizeAndFitInfo": [
+        "38 IT",
+        "40 IT",
+        "42 IT",
+        "44 IT",
+        "46 IT"
+    ],
+    "catLevel2Name": "Dresses",
+    "nonRootSuperCategories": "",
+    "variantType": "",
+    "viewable": false,
+    "hasZoomImages": "",
+    "stock": "",
+    "hasVideo": "",
+    "description": "",
+    "approvalStatus": "APPROVED",
+    "variantMatrix": "",
+    "baseProduct": "",
+    "lookbookId": "",
+    "variantOptions": "",
+    "sellableInCurrentCountry": "",
+    "galleryImageMaps": [
+        {
+            "thumbnail": {
+                "galleryIndex": 1,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 1,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 1,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_1_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 2,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_2_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 2,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_2_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 2,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_2_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 3,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_3_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 3,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_3_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 3,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_3_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 4,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_4_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 4,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_4_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 4,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_4_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 5,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_5_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 5,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_5_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 5,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_5_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 6,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_6_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 6,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_6_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 6,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_6_medium.jpg"
+            }
+        },
+        {
+            "thumbnail": {
+                "galleryIndex": 7,
+                "imageType": "GALLERY",
+                "format": "thumbnail",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_7_thumbnail.jpg"
+            },
+            "large": {
+                "galleryIndex": 7,
+                "imageType": "GALLERY",
+                "format": "large",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_7_large.jpg"
+            },
+            "medium": {
+                "galleryIndex": 7,
+                "imageType": "GALLERY",
+                "format": "medium",
+                "altText": "Floral-print silk-twill maxi dress ",
+                "url": "//assetsprx.matchesfashion.com/img/product/1232802_7_medium.jpg"
+            }
+        }
+    ],
+    "reviews": "",
+    "videoUrl": "",
+    "genderShortName": "W",
+    "detailBullets": "",
+    "code": "1232802",
+    "url": "/products/Gucci-Floral-print-silk-twill-maxi-dress--1232802",
+    "indicativePrice": "",
+    "price": {
+        "percentageDiscount": "",
+        "currencyIso": "GBP",
+        "taxIncluded": "",
+        "formattedWasPrice": "£0.00",
+        "priceType": "BUY",
+        "value": 3550.0,
+        "formattedWasPriceWithoutDecimals": "£0",
+        "wasPrice": 0.0,
+        "maxQuantity": "",
+        "minQuantity": "",
+        "formattedValue": "£3,550.00",
+        "formattedPriceWithoutDecimals": "£3,550"
+    },
+    "isVisibleAfterLastSold": false,
+    "season": "Autumn/Winter 2018",
+    "manufacturer": "",
+    "futureStocks": "",
+    "images": "",
+    "slug": "Runway",
+    "navDepartment": "",
+    "freshnessDate": 1537760731000,
+    "classifications": "",
+    "videoHasModel": false,
+    "averageRating": "",
+    "stockFragment": "100.0",
+    "comingSoon": false,
+    "purchasable": "",
+    "baseCode": "",
+    "cites": "",
+    "isOneSize": "",
+    "videoIs360": false,
+    "catLevel2": "WomensDresses",
+    "genders": [
+        {
+            "name": "",
+            "code": "Womens"
+        }
+    ],
+    "globalID": "",
+    "refinementColour": "Print",
+    "colourProducts": "",
+    "hasCitesRestriction": "",
+    "volumePrices": "",
+    "leafCategories": "",
+    "styleNotes": "",
+    "designerUrl": "",
+    "name": "Floral-print silk-twill maxi dress ",
+    "formattedFreshnessDate": "24-09-2018",
+    "baseOptions": "",
+    "myStylistOnly": false,
+    "availableForPickup": "",
+    "taxAndDutyMessage": "",
+    "styleItWithProducts": "",
+    "countryOfOrigin": "",
+    "sizeList": [
+        {
+            "taxonomyName": "",
+            "sortOrder": "",
+            "baseCode": "10002",
+            "value": "38 IT",
+            "oneSize": "",
+            "available": true,
+            "code": "20072"
+        },
+        {
+            "taxonomyName": "",
+            "sortOrder": "",
+            "baseCode": "10003",
+            "value": "40 IT",
+            "oneSize": "",
+            "available": true,
+            "code": "20073"
+        },
+        {
+            "taxonomyName": "",
+            "sortOrder": "",
+            "baseCode": "10004",
+            "value": "42 IT",
+            "oneSize": "",
+            "available": true,
+            "code": "20074"
+        },
+        {
+            "taxonomyName": "",
+            "sortOrder": "",
+            "baseCode": "10005",
+            "value": "44 IT",
+            "oneSize": "",
+            "available": true,
+            "code": "20075"
+        },
+        {
+            "taxonomyName": "",
+            "sortOrder": "",
+            "baseCode": "10006",
+            "value": "46 IT",
+            "oneSize": "",
+            "available": true,
+            "code": "20076"
+        }
+    ],
+    "garmentType": "",
+    "designer": {
+        "designerCategoryCode": "",
+        "name": "Gucci",
+        "code": "",
+        "url": ""
+    },
+    "carouselImages": "",
+    "siteProperties": "",
+    "stockCount": "5",
+    "stockValue": "£17750.0",
+    "outfits": "",
+    "markDown": "",
+    "priceRange": "",
+    "numberOfReviews": "",
+    "fulfillFromStore": "",
+    "volumePricesFlag": "",
+    "curated": false,
+    "categories": "",
+    "potentialPromotions": ""
+}
