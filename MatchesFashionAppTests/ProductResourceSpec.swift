@@ -16,6 +16,7 @@ class ProductResourceSpec: QuickSpec {
                     }
                     it("return mapped values") {
                         expect(product?.name).to(equal("Floral-print silk-twill maxi dress "))
+                        expect(product?.designerName).to(equal("Gucci"))
                     }
                 }
 
