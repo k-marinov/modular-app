@@ -14,6 +14,8 @@
 		B63BF0D7215D553E00BB2554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D6215D553E00BB2554 /* Assets.xcassets */; };
 		B63BF0DA215D553E00BB2554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D8215D553E00BB2554 /* LaunchScreen.storyboard */; };
 		B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */; };
+		B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA740215D5EA600E1EF83 /* Resource.swift */; };
+		B6AEA74C215D61E100E1EF83 /* CurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		B63BF0E0215D553E00BB2554 /* MatchesFashionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchesFashionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResourceSpec.swift; sourceTree = "<group>"; };
 		B63BF0E6215D553E00BB2554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AEA740215D5EA600E1EF83 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				B6AEA73F215D5D6400E1EF83 /* App */,
+				B6AEA742215D5F1F00E1EF83 /* Product */,
+				B6AEA743215D5F2600E1EF83 /* Currency */,
 				B6AEA73D215D5D4200E1EF83 /* Shared */,
 				B6AEA73E215D5D4800E1EF83 /* SupportFiles */,
 			);
@@ -119,6 +125,7 @@
 		B6AEA73D215D5D4200E1EF83 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA744215D5F3900E1EF83 /* protocol */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -141,6 +148,77 @@
 				B63BF0D3215D553C00BB2554 /* Main.storyboard */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		B6AEA742215D5F1F00E1EF83 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA74A215D5F6800E1EF83 /* request */,
+				B6AEA747215D5F5100E1EF83 /* protocol */,
+				B6AEA745215D5F4600E1EF83 /* resource */,
+				B6AEA746215D5F4B00E1EF83 /* service */,
+				B6AEA749215D5F5C00E1EF83 /* view */,
+				B6AEA748215D5F5600E1EF83 /* viewcontroller */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		B6AEA743215D5F2600E1EF83 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		B6AEA744215D5F3900E1EF83 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA740215D5EA600E1EF83 /* Resource.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B6AEA745215D5F4600E1EF83 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B6AEA746215D5F4B00E1EF83 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B6AEA747215D5F5100E1EF83 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B6AEA748215D5F5600E1EF83 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B6AEA749215D5F5C00E1EF83 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B6AEA74A215D5F6800E1EF83 /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
@@ -344,6 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AEA74C215D61E100E1EF83 /* CurrencyRequest.swift in Sources */,
+				B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */,
 				B63BF0D2215D553C00BB2554 /* ViewController.swift in Sources */,
 				B63BF0D0215D553C00BB2554 /* AppDelegate.swift in Sources */,
 			);
