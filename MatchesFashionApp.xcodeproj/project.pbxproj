@@ -22,6 +22,7 @@
 		B6AEA757215D676000E1EF83 /* ProductMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA756215D676000E1EF83 /* ProductMother.swift */; };
 		B6AEA759215D68C900E1EF83 /* ProductResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA758215D68C900E1EF83 /* ProductResource.swift */; };
 		B6AEA75B215D708F00E1EF83 /* PriceResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA75A215D708F00E1EF83 /* PriceResource.swift */; };
+		B6AEA75D215D864C00E1EF83 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA75C215D864C00E1EF83 /* Currency.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		B6AEA756215D676000E1EF83 /* ProductMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductMother.swift; sourceTree = "<group>"; };
 		B6AEA758215D68C900E1EF83 /* ProductResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResource.swift; sourceTree = "<group>"; };
 		B6AEA75A215D708F00E1EF83 /* PriceResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceResource.swift; sourceTree = "<group>"; };
+		B6AEA75C215D864C00E1EF83 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			children = (
 				B6AEA758215D68C900E1EF83 /* ProductResource.swift */,
 				B6AEA75A215D708F00E1EF83 /* PriceResource.swift */,
+				B6AEA75C215D864C00E1EF83 /* Currency.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */,
 				B6AEA759215D68C900E1EF83 /* ProductResource.swift in Sources */,
 				B63BF0D2215D553C00BB2554 /* ViewController.swift in Sources */,
+				B6AEA75D215D864C00E1EF83 /* Currency.swift in Sources */,
 				B63BF0D0215D553C00BB2554 /* AppDelegate.swift in Sources */,
 				B6AEA75B215D708F00E1EF83 /* PriceResource.swift in Sources */,
 			);

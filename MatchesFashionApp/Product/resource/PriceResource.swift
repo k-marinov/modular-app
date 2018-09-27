@@ -1,24 +1,24 @@
 import SwiftyJSON
 
-class PriceResource: Resource {
+struct PriceResource: Resource {
 
-    private(set) var value: Double
-    private(set) var currencyCode: String
-    
+    private let value: Double
+    private let currency: Currency
 
-    required init(json: JSON) {
+    init(json: JSON) {
         value = json["value"].doubleValue
-        currencyCode = json["currencyIso"].stringValue
+        currency = Currency(code: json["currencyIso"].string ?? "GBP", conversionRate: 1.0)
     }
 
     func formatted() -> String {
-        return "£\(value)"
-    }
-
-    private func url(from url: String) -> URL? {
-        return url.hasPrefix("//")
-            ? URL(string: "https:\(url)")
-            : URL(string: url)
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
+        formatter.minimumIntegerDigits = 1
+        formatter.numberStyle = .currency
+        formatter.currencyCode = currency.code
+        formatter.locale = Locale.current
+        return formatter.string(from: NSNumber(value: value * currency.conversionRate)) ?? ""
     }
 
 }

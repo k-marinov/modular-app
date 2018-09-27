@@ -1,13 +1,13 @@
 import SwiftyJSON
 
-class ProductResource: Resource {
+struct ProductResource: Resource {
 
-    private var price: PriceResource
+    private let price: PriceResource
     private(set) var name: String
     private(set) var designerName: String
     private(set) var imageUrl: URL?
 
-    required init(json: JSON) {
+    init(json: JSON) {
         name = json["name"].stringValue
         designerName = json["designer"]["name"].stringValue
         price = PriceResource(json: json["price"])
