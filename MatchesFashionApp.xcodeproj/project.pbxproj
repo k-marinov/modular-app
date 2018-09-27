@@ -100,12 +100,9 @@
 		B63BF0CE215D553C00BB2554 /* MatchesFashionApp */ = {
 			isa = PBXGroup;
 			children = (
-				B63BF0CF215D553C00BB2554 /* AppDelegate.swift */,
-				B63BF0D1215D553C00BB2554 /* ViewController.swift */,
-				B63BF0D3215D553C00BB2554 /* Main.storyboard */,
-				B63BF0D6215D553E00BB2554 /* Assets.xcassets */,
-				B63BF0D8215D553E00BB2554 /* LaunchScreen.storyboard */,
-				B63BF0DB215D553E00BB2554 /* Info.plist */,
+				B6AEA73F215D5D6400E1EF83 /* App */,
+				B6AEA73D215D5D4200E1EF83 /* Shared */,
+				B6AEA73E215D5D4800E1EF83 /* SupportFiles */,
 			);
 			path = MatchesFashionApp;
 			sourceTree = "<group>";
@@ -117,6 +114,33 @@
 				B63BF0E6215D553E00BB2554 /* Info.plist */,
 			);
 			path = MatchesFashionAppTests;
+			sourceTree = "<group>";
+		};
+		B6AEA73D215D5D4200E1EF83 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6AEA73E215D5D4800E1EF83 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B63BF0D6215D553E00BB2554 /* Assets.xcassets */,
+				B63BF0D8215D553E00BB2554 /* LaunchScreen.storyboard */,
+				B63BF0DB215D553E00BB2554 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B6AEA73F215D5D6400E1EF83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B63BF0CF215D553C00BB2554 /* AppDelegate.swift */,
+				B63BF0D1215D553C00BB2554 /* ViewController.swift */,
+				B63BF0D3215D553C00BB2554 /* Main.storyboard */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
@@ -487,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
-				INFOPLIST_FILE = MatchesFashionApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MatchesFashionApp/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDD95TS3QC;
-				INFOPLIST_FILE = MatchesFashionApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MatchesFashionApp/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
