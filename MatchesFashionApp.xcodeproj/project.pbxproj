@@ -13,7 +13,7 @@
 		B63BF0D5215D553C00BB2554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D3215D553C00BB2554 /* Main.storyboard */; };
 		B63BF0D7215D553E00BB2554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D6215D553E00BB2554 /* Assets.xcassets */; };
 		B63BF0DA215D553E00BB2554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D8215D553E00BB2554 /* LaunchScreen.storyboard */; };
-		B63BF0E5215D553E00BB2554 /* MatchesFashionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF0E4215D553E00BB2554 /* MatchesFashionAppTests.swift */; };
+		B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		B63BF0D9215D553E00BB2554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63BF0DB215D553E00BB2554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63BF0E0215D553E00BB2554 /* MatchesFashionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchesFashionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63BF0E4215D553E00BB2554 /* MatchesFashionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFashionAppTests.swift; sourceTree = "<group>"; };
+		B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResourceSpec.swift; sourceTree = "<group>"; };
 		B63BF0E6215D553E00BB2554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 		B63BF0E3215D553E00BB2554 /* MatchesFashionAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B63BF0E4215D553E00BB2554 /* MatchesFashionAppTests.swift */,
+				B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */,
 				B63BF0E6215D553E00BB2554 /* Info.plist */,
 			);
 			path = MatchesFashionAppTests;
@@ -329,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63BF0E5215D553E00BB2554 /* MatchesFashionAppTests.swift in Sources */,
+				B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
