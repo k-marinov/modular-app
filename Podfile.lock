@@ -1,5 +1,18 @@
 PODS:
   - Nimble (7.3.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
   - Quick (1.3.1)
   - RxCocoa (4.3.0):
     - RxSwift (~> 4.0)
@@ -8,14 +21,16 @@ PODS:
 
 DEPENDENCIES:
   - Nimble
+  - OHHTTPStubs/Swift (= 6.1.0)
   - Quick
-  - RxCocoa
-  - RxSwift
-  - SwiftyJSON
+  - RxCocoa (= 4.3.0)
+  - RxSwift (= 4.3.0)
+  - SwiftyJSON (= 4.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
+    - OHHTTPStubs
     - Quick
     - RxCocoa
     - RxSwift
@@ -23,11 +38,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Nimble: c8d6a1f463701921c46de965c673e13cafa09196
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
   RxCocoa: 71b9cce833fbcb89a8eec11816dd225830c2bd3c
   RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 196990914ab877817657a5820da5de5d5321c8f5
+PODFILE CHECKSUM: b96569f42ed7d9902542bf1782f54855b464a4ef
 
 COCOAPODS: 1.5.3

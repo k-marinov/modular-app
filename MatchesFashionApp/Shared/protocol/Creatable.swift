@@ -1,2 +1,2 @@
-protocol Creatable: RouterCreatable, ServiceCreatable, UtilityCreatable, RemoteCreatable {
+protocol Creatable: RouterCreatable, ServiceCreatable, UtilityCreatable {
 }

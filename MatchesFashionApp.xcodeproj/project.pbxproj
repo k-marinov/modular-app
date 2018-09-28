@@ -42,7 +42,6 @@
 		B6AEA787215ECAD800E1EF83 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA785215ECAD800E1EF83 /* ApiClient.swift */; };
 		B6AEA78E215ECB3800E1EF83 /* Creatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA788215ECB3600E1EF83 /* Creatable.swift */; };
 		B6AEA78F215ECB3800E1EF83 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA789215ECB3700E1EF83 /* Creator.swift */; };
-		B6AEA790215ECB3800E1EF83 /* RemoteCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78A215ECB3700E1EF83 /* RemoteCreatable.swift */; };
 		B6AEA791215ECB3800E1EF83 /* RouterCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78B215ECB3700E1EF83 /* RouterCreatable.swift */; };
 		B6AEA792215ECB3800E1EF83 /* ServiceCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */; };
 		B6AEA793215ECB3800E1EF83 /* UtilityCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78D215ECB3800E1EF83 /* UtilityCreatable.swift */; };
@@ -51,6 +50,10 @@
 		B6AEA799215ECD7A00E1EF83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA798215ECD7A00E1EF83 /* Router.swift */; };
 		B6AEA79C215ED06B00E1EF83 /* ApiRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA79B215ED06B00E1EF83 /* ApiRequestTests.swift */; };
 		B6AEA7A1215ED0F400E1EF83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A0215ED0F400E1EF83 /* Constants.swift */; };
+		B6AEA7A4215ED4C500E1EF83 /* ProductsHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A3215ED4C500E1EF83 /* ProductsHttpMocker.swift */; };
+		B6AEA7A6215ED53800E1EF83 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AEA7A5215ED53800E1EF83 /* empty.json */; };
+		B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */; };
+		B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,7 +112,6 @@
 		B6AEA785215ECAD800E1EF83 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B6AEA788215ECB3600E1EF83 /* Creatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creatable.swift; sourceTree = "<group>"; };
 		B6AEA789215ECB3700E1EF83 /* Creator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
-		B6AEA78A215ECB3700E1EF83 /* RemoteCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCreatable.swift; sourceTree = "<group>"; };
 		B6AEA78B215ECB3700E1EF83 /* RouterCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterCreatable.swift; sourceTree = "<group>"; };
 		B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCreatable.swift; sourceTree = "<group>"; };
 		B6AEA78D215ECB3800E1EF83 /* UtilityCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityCreatable.swift; sourceTree = "<group>"; };
@@ -118,6 +120,10 @@
 		B6AEA798215ECD7A00E1EF83 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B6AEA79B215ED06B00E1EF83 /* ApiRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestTests.swift; sourceTree = "<group>"; };
 		B6AEA7A0215ED0F400E1EF83 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6AEA7A3215ED4C500E1EF83 /* ProductsHttpMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsHttpMocker.swift; sourceTree = "<group>"; };
+		B6AEA7A5215ED53800E1EF83 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceTests.swift; sourceTree = "<group>"; };
+		B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,7 @@
 				B6AEA762215D8EA000E1EF83 /* Product */,
 				B6AEA755215D673D00E1EF83 /* Mothers */,
 				B6AEA79D215ED08E00E1EF83 /* Mocks */,
+				B6AEA7A2215ED48700E1EF83 /* HttpMocks */,
 				B6AEA750215D671100E1EF83 /* Helper */,
 				B6AEA74D215D650B00E1EF83 /* Resources */,
 				B63BF0E6215D553E00BB2554 /* Info.plist */,
@@ -253,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				B6AEA788215ECB3600E1EF83 /* Creatable.swift */,
-				B6AEA78A215ECB3700E1EF83 /* RemoteCreatable.swift */,
 				B6AEA78B215ECB3700E1EF83 /* RouterCreatable.swift */,
 				B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */,
 				B6AEA78D215ECB3800E1EF83 /* UtilityCreatable.swift */,
@@ -279,6 +285,7 @@
 		B6AEA746215D5F4B00E1EF83 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -317,6 +324,7 @@
 			children = (
 				B6AEA74E215D652200E1EF83 /* product-1232802.json */,
 				B6AEA75E215D8A7100E1EF83 /* products.json */,
+				B6AEA7A5215ED53800E1EF83 /* empty.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 		B6AEA762215D8EA000E1EF83 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7A7215ED5ED00E1EF83 /* service */,
 				B6AEA77C215EC7E500E1EF83 /* request */,
 				B6AEA763215D8EA700E1EF83 /* resource */,
 			);
@@ -428,6 +437,22 @@
 			children = (
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B6AEA7A2215ED48700E1EF83 /* HttpMocks */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7A3215ED4C500E1EF83 /* ProductsHttpMocker.swift */,
+			);
+			path = HttpMocks;
+			sourceTree = "<group>";
+		};
+		B6AEA7A7215ED5ED00E1EF83 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
@@ -535,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6AEA74F215D652200E1EF83 /* product-1232802.json in Resources */,
+				B6AEA7A6215ED53800E1EF83 /* empty.json in Resources */,
 				B6AEA75F215D8A7100E1EF83 /* products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +597,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -579,6 +606,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,11 +674,11 @@
 				B6AEA772215EBB9A00E1EF83 /* ClassError.swift in Sources */,
 				B63BF0D2215D553C00BB2554 /* ViewController.swift in Sources */,
 				B6AEA773215EBB9A00E1EF83 /* ApiError.swift in Sources */,
+				B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */,
 				B6AEA775215EBBE300E1EF83 /* ApiRequest.swift in Sources */,
 				B6AEA75D215D864C00E1EF83 /* Currency.swift in Sources */,
 				B6AEA761215D8D8500E1EF83 /* ProductsResource.swift in Sources */,
 				B6AEA792215ECB3800E1EF83 /* ServiceCreatable.swift in Sources */,
-				B6AEA790215ECB3800E1EF83 /* RemoteCreatable.swift in Sources */,
 				B6AEA787215ECAD800E1EF83 /* ApiClient.swift in Sources */,
 				B6AEA76C215EBB7900E1EF83 /* HttpResponse.swift in Sources */,
 				B6AEA76F215EBB7900E1EF83 /* ApiResponse.swift in Sources */,
@@ -670,12 +698,14 @@
 			files = (
 				B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */,
 				B6AEA77B215EC7E000E1EF83 /* ProductsRequest.swift in Sources */,
+				B6AEA7A4215ED4C500E1EF83 /* ProductsHttpMocker.swift in Sources */,
 				B6AEA753215D671E00E1EF83 /* FileHelper.swift in Sources */,
 				B6AEA79C215ED06B00E1EF83 /* ApiRequestTests.swift in Sources */,
 				B6AEA757215D676000E1EF83 /* ProductMother.swift in Sources */,
 				B6AEA7A1215ED0F400E1EF83 /* Constants.swift in Sources */,
 				B6AEA765215D8EB600E1EF83 /* ProductsResourceSpec.swift in Sources */,
 				B6AEA782215ECA6700E1EF83 /* ApiResponseTests.swift in Sources */,
+				B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */,
 				B6AEA754215D671E00E1EF83 /* RxCollector.swift in Sources */,
 				B6AEA779215EBF8700E1EF83 /* HttpResponseMother.swift in Sources */,
 			);

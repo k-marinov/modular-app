@@ -1,4 +1,3 @@
-# Uncomment this line to define a global platform for your project
 platform :ios, '10.0'
 use_frameworks!
 
@@ -6,12 +5,13 @@ use_frameworks!
 inhibit_all_warnings!
 
 def common_pods
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'SwiftyJSON'
+  pod 'RxSwift', '4.3.0'
+  pod 'RxCocoa', '4.3.0'
+  pod 'SwiftyJSON', '4.1.0'
 end
 
 def test_pods
+  pod 'OHHTTPStubs/Swift', '6.1.0'
   pod 'Quick'
   pod 'Nimble'
 end
