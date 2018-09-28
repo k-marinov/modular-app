@@ -7,34 +7,35 @@ class ProductResourceSpec: QuickSpec {
 
     override func spec() {
         describe("ProductResource") {
-            describe("initalizer") {
-                var product: ProductResource?
-                var imageUrl: URL?
 
+            describe("initalizer") {
+                var resource: ProductResource?
                 context("when has valid json") {
+                    var imageUrl: URL?
+
                     beforeEach {
-                        product = ProductMother.product()
+                        resource = ProductMother.product()
                         imageUrl = URL(string: "https://assetsprx.matchesfashion.com/img/product/1232802_1_medium.jpg")
                     }
 
                     it("return mapped values") {
-                        expect(product?.name).to(equal("Floral-print silk-twill maxi dress "))
-                        expect(product?.designerName).to(equal("Gucci"))
-                        expect(product?.priceFormatted()).to(equal("£3,550"))
-                        expect(product?.imageUrl).to(equal(imageUrl))
+                        expect(resource?.name).to(equal("Floral-print silk-twill maxi dress "))
+                        expect(resource?.designerName).to(equal("Gucci"))
+                        expect(resource?.priceFormatted()).to(equal("£3,550"))
+                        expect(resource?.imageUrl).to(equal(imageUrl))
                     }
                 }
 
                 context("when has empty json") {
                     beforeEach {
-                        product = ProductMother.emptyProduct()
+                        resource = ProductMother.emptyProduct()
                     }
 
                     it("return default property values") {
-                        expect(product?.name).to(beEmpty())
-                        expect(product?.designerName).to(beEmpty())
-                        expect(product?.priceFormatted()).to(equal("£0"))
-                        expect(product?.imageUrl).to(beNil())
+                        expect(resource?.name).to(beEmpty())
+                        expect(resource?.designerName).to(beEmpty())
+                        expect(resource?.priceFormatted()).to(equal("£0"))
+                        expect(resource?.imageUrl).to(beNil())
                     }
                 }
             }
