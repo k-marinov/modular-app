@@ -1,4 +1,4 @@
-class ProductsRequest: ApiRequest {
+struct ProductsRequest: ApiRequest {
 
     func httpRequestUrl() -> String {
         return "http://matchesfashion.com/womens/shop?format=json"

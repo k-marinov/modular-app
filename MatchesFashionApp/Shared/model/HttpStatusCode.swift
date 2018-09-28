@@ -1,5 +1,3 @@
-import Foundation
-
 enum HttpStatusCode: Int {
 
     static let clientErrorsGroup: CountableClosedRange<Int> = (400...499)

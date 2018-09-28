@@ -15,7 +15,7 @@
 		B63BF0DA215D553E00BB2554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BF0D8215D553E00BB2554 /* LaunchScreen.storyboard */; };
 		B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */; };
 		B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA740215D5EA600E1EF83 /* Resource.swift */; };
-		B6AEA74C215D61E100E1EF83 /* CurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */; };
+		B6AEA74C215D61E100E1EF83 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */; };
 		B6AEA74F215D652200E1EF83 /* product-1232802.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AEA74E215D652200E1EF83 /* product-1232802.json */; };
 		B6AEA753215D671E00E1EF83 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA751215D671D00E1EF83 /* FileHelper.swift */; };
 		B6AEA754215D671E00E1EF83 /* RxCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA752215D671E00E1EF83 /* RxCollector.swift */; };
@@ -54,6 +54,8 @@
 		B6AEA7A6215ED53800E1EF83 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AEA7A5215ED53800E1EF83 /* empty.json */; };
 		B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */; };
 		B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */; };
+		B6AEA7B0215EDE3E00E1EF83 /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */; };
+		B6AEA7B5215EDFBF00E1EF83 /* ExchangeRateMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +87,7 @@
 		B63BF0E4215D553E00BB2554 /* ProductResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResourceSpec.swift; sourceTree = "<group>"; };
 		B63BF0E6215D553E00BB2554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6AEA740215D5EA600E1EF83 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRequest.swift; sourceTree = "<group>"; };
+		B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
 		B6AEA74E215D652200E1EF83 /* product-1232802.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "product-1232802.json"; sourceTree = "<group>"; };
 		B6AEA751215D671D00E1EF83 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		B6AEA752215D671E00E1EF83 /* RxCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollector.swift; sourceTree = "<group>"; };
@@ -124,6 +126,8 @@
 		B6AEA7A5215ED53800E1EF83 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceTests.swift; sourceTree = "<group>"; };
 		B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResource.swift; sourceTree = "<group>"; };
+		B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateMother.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +186,7 @@
 			children = (
 				B6AEA73F215D5D6400E1EF83 /* App */,
 				B6AEA742215D5F1F00E1EF83 /* Product */,
-				B6AEA743215D5F2600E1EF83 /* Currency */,
+				B6AEA743215D5F2600E1EF83 /* ExchangeRate */,
 				B6AEA73D215D5D4200E1EF83 /* Shared */,
 				B6AEA73E215D5D4800E1EF83 /* SupportFiles */,
 			);
@@ -194,6 +198,7 @@
 			children = (
 				B6AEA77F215ECA5600E1EF83 /* Shared */,
 				B6AEA762215D8EA000E1EF83 /* Product */,
+				B6AEA7B1215EDE5E00E1EF83 /* ExchangeRate */,
 				B6AEA755215D673D00E1EF83 /* Mothers */,
 				B6AEA79D215ED08E00E1EF83 /* Mocks */,
 				B6AEA7A2215ED48700E1EF83 /* HttpMocks */,
@@ -248,12 +253,14 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
-		B6AEA743215D5F2600E1EF83 /* Currency */ = {
+		B6AEA743215D5F2600E1EF83 /* ExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
-				B6AEA74B215D61E100E1EF83 /* CurrencyRequest.swift */,
+				B6AEA7AE215EDDF600E1EF83 /* resource */,
+				B6AEA7AD215EDDEE00E1EF83 /* request */,
+				B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */,
 			);
-			path = Currency;
+			path = ExchangeRate;
 			sourceTree = "<group>";
 		};
 		B6AEA744215D5F3900E1EF83 /* protocol */ = {
@@ -344,6 +351,7 @@
 			children = (
 				B6AEA778215EBF8600E1EF83 /* HttpResponseMother.swift */,
 				B6AEA756215D676000E1EF83 /* ProductMother.swift */,
+				B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */,
 			);
 			path = Mothers;
 			sourceTree = "<group>";
@@ -453,6 +461,44 @@
 				B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		B6AEA7AD215EDDEE00E1EF83 /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B6AEA7AE215EDDF600E1EF83 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B6AEA7B1215EDE5E00E1EF83 /* ExchangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7B3215EDE7100E1EF83 /* request */,
+				B6AEA7B2215EDE6B00E1EF83 /* resource */,
+			);
+			path = ExchangeRate;
+			sourceTree = "<group>";
+		};
+		B6AEA7B2215EDE6B00E1EF83 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B6AEA7B3215EDE7100E1EF83 /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
@@ -664,9 +710,10 @@
 				B6AEA76E215EBB7900E1EF83 /* HttpStatusCode.swift in Sources */,
 				B6AEA795215ECBD700E1EF83 /* Service.swift in Sources */,
 				B6AEA797215ECD1600E1EF83 /* Remote.swift in Sources */,
+				B6AEA7B0215EDE3E00E1EF83 /* ExchangeRateResource.swift in Sources */,
 				B6AEA78F215ECB3800E1EF83 /* Creator.swift in Sources */,
 				B6AEA793215ECB3800E1EF83 /* UtilityCreatable.swift in Sources */,
-				B6AEA74C215D61E100E1EF83 /* CurrencyRequest.swift in Sources */,
+				B6AEA74C215D61E100E1EF83 /* ExchangeRateRequest.swift in Sources */,
 				B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */,
 				B6AEA76D215EBB7900E1EF83 /* HttpMethod.swift in Sources */,
 				B6AEA786215ECAD800E1EF83 /* HttpClient.swift in Sources */,
@@ -699,6 +746,7 @@
 				B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */,
 				B6AEA77B215EC7E000E1EF83 /* ProductsRequest.swift in Sources */,
 				B6AEA7A4215ED4C500E1EF83 /* ProductsHttpMocker.swift in Sources */,
+				B6AEA7B5215EDFBF00E1EF83 /* ExchangeRateMother.swift in Sources */,
 				B6AEA753215D671E00E1EF83 /* FileHelper.swift in Sources */,
 				B6AEA79C215ED06B00E1EF83 /* ApiRequestTests.swift in Sources */,
 				B6AEA757215D676000E1EF83 /* ProductMother.swift in Sources */,

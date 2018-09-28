@@ -34,7 +34,7 @@ class HttpResponseMother {
 
     class func failureHttpUrlResponse() -> HTTPURLResponse {
         return HTTPURLResponse(
-            url: URL(string: "http://matchesfashion.com")!,
+            url: URL(string: "http://www.marvel.com")!,
             statusCode: 400,
             httpVersion: nil,
             headerFields: nil)!
