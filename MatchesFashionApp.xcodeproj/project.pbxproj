@@ -64,6 +64,14 @@
 		B6AEA7C6215FA12F00E1EF83 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7C5215FA12F00E1EF83 /* Scenario.swift */; };
 		B6AEA7C9215FA1AF00E1EF83 /* ExchangeRateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7C8215FA1AF00E1EF83 /* ExchangeRateServiceTests.swift */; };
 		B6AEA7CC215FA39A00E1EF83 /* ExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7CB215FA39A00E1EF83 /* ExchangeRateService.swift */; };
+		B6AEA7CE215FAE0900E1EF83 /* MatchesFashionAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7CD215FAE0900E1EF83 /* MatchesFashionAppRouter.swift */; };
+		B6AEA7D0215FB1B200E1EF83 /* ProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7CF215FB1B200E1EF83 /* ProductRouter.swift */; };
+		B6AEA7D3215FB61B00E1EF83 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7D2215FB61B00E1EF83 /* ProductsViewController.swift */; };
+		B6AEA7D5215FB65000E1EF83 /* ProductsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AEA7D4215FB65000E1EF83 /* ProductsViewController.storyboard */; };
+		B6AEA7D8215FB78800E1EF83 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7D7215FB78800E1EF83 /* ProductsViewModel.swift */; };
+		B6AEA7DA215FB7BF00E1EF83 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7D9215FB7BF00E1EF83 /* ViewModel.swift */; };
+		B6AEA7DC215FB9AC00E1EF83 /* ModelableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7DB215FB9AC00E1EF83 /* ModelableViewController.swift */; };
+		B6AEA7DE215FB9F000E1EF83 /* ViewControllerCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7DD215FB9F000E1EF83 /* ViewControllerCreatable.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +152,14 @@
 		B6AEA7C5215FA12F00E1EF83 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
 		B6AEA7C8215FA1AF00E1EF83 /* ExchangeRateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateServiceTests.swift; sourceTree = "<group>"; };
 		B6AEA7CB215FA39A00E1EF83 /* ExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateService.swift; sourceTree = "<group>"; };
+		B6AEA7CD215FAE0900E1EF83 /* MatchesFashionAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFashionAppRouter.swift; sourceTree = "<group>"; };
+		B6AEA7CF215FB1B200E1EF83 /* ProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRouter.swift; sourceTree = "<group>"; };
+		B6AEA7D2215FB61B00E1EF83 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B6AEA7D4215FB65000E1EF83 /* ProductsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsViewController.storyboard; sourceTree = "<group>"; };
+		B6AEA7D7215FB78800E1EF83 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		B6AEA7D9215FB7BF00E1EF83 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B6AEA7DB215FB9AC00E1EF83 /* ModelableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelableViewController.swift; sourceTree = "<group>"; };
+		B6AEA7DD215FB9F000E1EF83 /* ViewControllerCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCreatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +268,7 @@
 				B63BF0CF215D553C00BB2554 /* AppDelegate.swift */,
 				B63BF0D1215D553C00BB2554 /* ViewController.swift */,
 				B63BF0D3215D553C00BB2554 /* Main.storyboard */,
+				B6AEA7CD215FAE0900E1EF83 /* MatchesFashionAppRouter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -259,12 +276,14 @@
 		B6AEA742215D5F1F00E1EF83 /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7D6215FB77500E1EF83 /* viewmodel */,
 				B6AEA74A215D5F6800E1EF83 /* request */,
 				B6AEA747215D5F5100E1EF83 /* protocol */,
 				B6AEA745215D5F4600E1EF83 /* resource */,
 				B6AEA746215D5F4B00E1EF83 /* service */,
 				B6AEA749215D5F5C00E1EF83 /* view */,
 				B6AEA748215D5F5600E1EF83 /* viewcontroller */,
+				B6AEA7CF215FB1B200E1EF83 /* ProductRouter.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -283,6 +302,9 @@
 		B6AEA744215D5F3900E1EF83 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7DD215FB9F000E1EF83 /* ViewControllerCreatable.swift */,
+				B6AEA7DB215FB9AC00E1EF83 /* ModelableViewController.swift */,
+				B6AEA7D9215FB7BF00E1EF83 /* ViewModel.swift */,
 				B6AEA788215ECB3600E1EF83 /* Creatable.swift */,
 				B6AEA78B215ECB3700E1EF83 /* RouterCreatable.swift */,
 				B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */,
@@ -324,6 +346,8 @@
 		B6AEA748215D5F5600E1EF83 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7D2215FB61B00E1EF83 /* ProductsViewController.swift */,
+				B6AEA7D4215FB65000E1EF83 /* ProductsViewController.storyboard */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -549,6 +573,14 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		B6AEA7D6215FB77500E1EF83 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7D7215FB78800E1EF83 /* ProductsViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -644,6 +676,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63BF0DA215D553E00BB2554 /* LaunchScreen.storyboard in Resources */,
+				B6AEA7D5215FB65000E1EF83 /* ProductsViewController.storyboard in Resources */,
 				B63BF0D7215D553E00BB2554 /* Assets.xcassets in Resources */,
 				B63BF0D5215D553C00BB2554 /* Main.storyboard in Resources */,
 			);
@@ -756,15 +789,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AEA7CE215FAE0900E1EF83 /* MatchesFashionAppRouter.swift in Sources */,
 				B6AEA76E215EBB7900E1EF83 /* HttpStatusCode.swift in Sources */,
 				B6AEA795215ECBD700E1EF83 /* Service.swift in Sources */,
 				B6AEA7CC215FA39A00E1EF83 /* ExchangeRateService.swift in Sources */,
 				B6AEA797215ECD1600E1EF83 /* Remote.swift in Sources */,
 				B6AEA7BA215F822700E1EF83 /* ExchangeRateResource.swift in Sources */,
 				B6AEA78F215ECB3800E1EF83 /* Creator.swift in Sources */,
+				B6AEA7D0215FB1B200E1EF83 /* ProductRouter.swift in Sources */,
 				B6AEA793215ECB3800E1EF83 /* UtilityCreatable.swift in Sources */,
 				B6AEA74C215D61E100E1EF83 /* ExchangeRateRequest.swift in Sources */,
+				B6AEA7DA215FB7BF00E1EF83 /* ViewModel.swift in Sources */,
 				B6AEA741215D5EA600E1EF83 /* Resource.swift in Sources */,
+				B6AEA7DE215FB9F000E1EF83 /* ViewControllerCreatable.swift in Sources */,
 				B6AEA76D215EBB7900E1EF83 /* HttpMethod.swift in Sources */,
 				B6AEA786215ECAD800E1EF83 /* HttpClient.swift in Sources */,
 				B6AEA759215D68C900E1EF83 /* ProductResource.swift in Sources */,
@@ -772,10 +809,13 @@
 				B63BF0D2215D553C00BB2554 /* ViewController.swift in Sources */,
 				B6AEA773215EBB9A00E1EF83 /* ApiError.swift in Sources */,
 				B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */,
+				B6AEA7D3215FB61B00E1EF83 /* ProductsViewController.swift in Sources */,
 				B6AEA775215EBBE300E1EF83 /* ApiRequest.swift in Sources */,
 				B6AEA75D215D864C00E1EF83 /* Currency.swift in Sources */,
 				B6AEA761215D8D8500E1EF83 /* ProductsResource.swift in Sources */,
+				B6AEA7DC215FB9AC00E1EF83 /* ModelableViewController.swift in Sources */,
 				B6AEA792215ECB3800E1EF83 /* ServiceCreatable.swift in Sources */,
+				B6AEA7D8215FB78800E1EF83 /* ProductsViewModel.swift in Sources */,
 				B6AEA787215ECAD800E1EF83 /* ApiClient.swift in Sources */,
 				B6AEA76C215EBB7900E1EF83 /* HttpResponse.swift in Sources */,
 				B6AEA76F215EBB7900E1EF83 /* ApiResponse.swift in Sources */,
