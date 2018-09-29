@@ -2,10 +2,13 @@ import SwiftyJSON
 
 struct ExchangeRateResource: Resource {
 
-    private let rate: Double
+    let value: Double
 
     init(json: JSON) {
-        rate = 0.0
+        value = json["results"]
+            .dictionary?
+            .first?.value["val"]
+            .double ?? 1.0
     }
 
 }

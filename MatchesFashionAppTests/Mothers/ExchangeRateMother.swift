@@ -1,4 +1,5 @@
 import SwiftyJSON
+import Foundation
 
 @testable import MatchesFashionApp
 
@@ -9,7 +10,8 @@ class ExchangeRateMother {
     }
 
     class func emptyExchangeRate() -> ExchangeRateResource {
-        return ExchangeRateResource(json: JSON("{}".data(using: .utf8)!))
+        let data: Data = "{}".data(using: .utf8)!
+        return ExchangeRateResource(json: JSON(data))
     }
 
     private class func usdToGbpJsonData() -> Data {

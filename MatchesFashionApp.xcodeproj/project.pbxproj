@@ -54,8 +54,10 @@
 		B6AEA7A6215ED53800E1EF83 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AEA7A5215ED53800E1EF83 /* empty.json */; };
 		B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */; };
 		B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */; };
-		B6AEA7B0215EDE3E00E1EF83 /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */; };
-		B6AEA7B5215EDFBF00E1EF83 /* ExchangeRateMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */; };
+		B6AEA7B7215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B6215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift */; };
+		B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */; };
+		B6AEA7BA215F822700E1EF83 /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */; };
+		B6AEA7BB215F827D00E1EF83 /* ExchangeRateMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +130,8 @@
 		B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResource.swift; sourceTree = "<group>"; };
 		B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateMother.swift; sourceTree = "<group>"; };
+		B6AEA7B6215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResourceSpecs.swift; sourceTree = "<group>"; };
+		B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +494,7 @@
 		B6AEA7B2215EDE6B00E1EF83 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7B6215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 		B6AEA7B3215EDE7100E1EF83 /* request */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -710,7 +716,7 @@
 				B6AEA76E215EBB7900E1EF83 /* HttpStatusCode.swift in Sources */,
 				B6AEA795215ECBD700E1EF83 /* Service.swift in Sources */,
 				B6AEA797215ECD1600E1EF83 /* Remote.swift in Sources */,
-				B6AEA7B0215EDE3E00E1EF83 /* ExchangeRateResource.swift in Sources */,
+				B6AEA7BA215F822700E1EF83 /* ExchangeRateResource.swift in Sources */,
 				B6AEA78F215ECB3800E1EF83 /* Creator.swift in Sources */,
 				B6AEA793215ECB3800E1EF83 /* UtilityCreatable.swift in Sources */,
 				B6AEA74C215D61E100E1EF83 /* ExchangeRateRequest.swift in Sources */,
@@ -746,16 +752,18 @@
 				B63BF0E5215D553E00BB2554 /* ProductResourceSpec.swift in Sources */,
 				B6AEA77B215EC7E000E1EF83 /* ProductsRequest.swift in Sources */,
 				B6AEA7A4215ED4C500E1EF83 /* ProductsHttpMocker.swift in Sources */,
-				B6AEA7B5215EDFBF00E1EF83 /* ExchangeRateMother.swift in Sources */,
 				B6AEA753215D671E00E1EF83 /* FileHelper.swift in Sources */,
 				B6AEA79C215ED06B00E1EF83 /* ApiRequestTests.swift in Sources */,
 				B6AEA757215D676000E1EF83 /* ProductMother.swift in Sources */,
 				B6AEA7A1215ED0F400E1EF83 /* Constants.swift in Sources */,
+				B6AEA7B7215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift in Sources */,
 				B6AEA765215D8EB600E1EF83 /* ProductsResourceSpec.swift in Sources */,
 				B6AEA782215ECA6700E1EF83 /* ApiResponseTests.swift in Sources */,
+				B6AEA7BB215F827D00E1EF83 /* ExchangeRateMother.swift in Sources */,
 				B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */,
 				B6AEA754215D671E00E1EF83 /* RxCollector.swift in Sources */,
 				B6AEA779215EBF8700E1EF83 /* HttpResponseMother.swift in Sources */,
+				B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
