@@ -253,14 +253,14 @@
 			isa = PBXGroup;
 			children = (
 				B6AEA7DF215FC10100E1EF83 /* App */,
-				B6AEA77F215ECA5600E1EF83 /* Shared */,
-				B6AEA762215D8EA000E1EF83 /* Product */,
 				B6AEA7B1215EDE5E00E1EF83 /* ExchangeRate */,
-				B6AEA755215D673D00E1EF83 /* Mothers */,
-				B6AEA79D215ED08E00E1EF83 /* Mocks */,
-				B6AEA7A2215ED48700E1EF83 /* HttpMocks */,
 				B6AEA750215D671100E1EF83 /* Helper */,
+				B6AEA7A2215ED48700E1EF83 /* HttpMocks */,
+				B6AEA79D215ED08E00E1EF83 /* Mocks */,
+				B6AEA755215D673D00E1EF83 /* Mothers */,
+				B6AEA762215D8EA000E1EF83 /* Product */,
 				B6AEA74D215D650B00E1EF83 /* Resources */,
+				B6AEA77F215ECA5600E1EF83 /* Shared */,
 				B63BF0E6215D553E00BB2554 /* Info.plist */,
 			);
 			path = MatchesFashionAppTests;
@@ -270,11 +270,11 @@
 			isa = PBXGroup;
 			children = (
 				B6BD0566215FCCD4000059F0 /* datasource */,
-				B6BD0559215FC59F000059F0 /* extension */,
-				B6AEA783215ECAC800E1EF83 /* util */,
 				B6AEA767215EBB4200E1EF83 /* error */,
+				B6BD0559215FC59F000059F0 /* extension */,
 				B6AEA766215EBB3A00E1EF83 /* model */,
 				B6AEA744215D5F3900E1EF83 /* protocol */,
+				B6AEA783215ECAC800E1EF83 /* util */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				B63BF0CF215D553C00BB2554 /* AppDelegate.swift */,
-				B6AEA7CD215FAE0900E1EF83 /* AppRouter.swift */,
+				B6BD057E216004B8000059F0 /* router */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -301,14 +301,14 @@
 		B6AEA742215D5F1F00E1EF83 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				B6AEA7D6215FB77500E1EF83 /* viewmodel */,
-				B6AEA74A215D5F6800E1EF83 /* request */,
 				B6AEA747215D5F5100E1EF83 /* protocol */,
+				B6AEA74A215D5F6800E1EF83 /* request */,
 				B6AEA745215D5F4600E1EF83 /* resource */,
+				B6BD057D2160046D000059F0 /* router */,
 				B6AEA746215D5F4B00E1EF83 /* service */,
 				B6AEA749215D5F5C00E1EF83 /* view */,
 				B6AEA748215D5F5600E1EF83 /* viewcontroller */,
-				B6AEA7CF215FB1B200E1EF83 /* ProductRouter.swift */,
+				B6AEA7D6215FB77500E1EF83 /* viewmodel */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -316,10 +316,10 @@
 		B6AEA743215D5F2600E1EF83 /* ExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
-				B6AEA7CA215FA38800E1EF83 /* service */,
 				B6AEA7BC215F977800E1EF83 /* model */,
-				B6AEA7AE215EDDF600E1EF83 /* resource */,
 				B6AEA7AD215EDDEE00E1EF83 /* request */,
+				B6AEA7AE215EDDF600E1EF83 /* resource */,
+				B6AEA7CA215FA38800E1EF83 /* service */,
 			);
 			path = ExchangeRate;
 			sourceTree = "<group>";
@@ -671,6 +671,22 @@
 				B6BD057B215FFEC8000059F0 /* ProductsViewControllerTests.swift */,
 			);
 			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B6BD057D2160046D000059F0 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7CF215FB1B200E1EF83 /* ProductRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		B6BD057E216004B8000059F0 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7CD215FAE0900E1EF83 /* AppRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
