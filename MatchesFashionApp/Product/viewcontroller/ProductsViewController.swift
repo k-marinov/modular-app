@@ -25,14 +25,20 @@ class ProductsViewController: UIViewController, ModelableViewController {
             .disposed(by: disposeBag)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.collectionViewLayout.invalidateLayout()
-    }
-
     private func setUp() {
         setUpCollectionView()
         setUpNavigationBarTitle()
+    }
+
+    private func subscribe() {
+        productsViewModel.reloadData()
+            .drive(onNext: { [weak self] _ in
+                self?.collectionView.reloadData()
+            }).disposed(by: disposeBag)
+
+        productsViewModel.isLoading()
+            .drive(activityIndicatorView.rx.isLoading)
+            .disposed(by: disposeBag)
     }
 
     private func setUpCollectionView() {
@@ -52,25 +58,14 @@ class ProductsViewController: UIViewController, ModelableViewController {
 
     private func collectionViewFlowLayout() -> UICollectionViewFlowLayout {
         collectionView.layoutIfNeeded()
-        let column: CGFloat = 2.0
-        let length: CGFloat = collectionView.frame.size.width / column
+        let numberOfColumns: CGFloat = 2.0
+        let length: CGFloat = collectionView.frame.size.width / numberOfColumns
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: length, height: length + (length * 0.5))
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         return layout
-    }
-
-    private func subscribe() {
-        productsViewModel.reloadData()
-            .drive(onNext: { [weak self] _ in
-                self?.collectionView.reloadData()
-            }).disposed(by: disposeBag)
-
-        productsViewModel.isLoading()
-            .drive(activityIndicatorView.rx.isLoading)
-            .disposed(by: disposeBag)
     }
 
     private func setUpNavigationBarTitle() {
