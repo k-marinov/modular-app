@@ -8,11 +8,11 @@ class ApiRequestTests: XCTestCase {
     private let disposeBag: DisposeBag = DisposeBag()
 
     func testAsURLRequest_whenValidUrl_returnsURLRequest() {
-        let request: ProductsRequest = ProductsRequest()
-        let contentTypeHeaderValue: String? = try! request.asURLRequest().allHTTPHeaderFields?["Content-Type"]
-        let httpMethod: String? = try! request.asURLRequest().httpMethod
-        let cachePolicy: URLRequest.CachePolicy = try! request.asURLRequest().cachePolicy
-        let timeoutInterval: TimeInterval = try! request.asURLRequest().timeoutInterval
+        let request: ProductsRequest = try! ProductsRequest()
+        let contentTypeHeaderValue: String? = request.asURLRequest().allHTTPHeaderFields?["Content-Type"]
+        let httpMethod: String? = request.asURLRequest().httpMethod
+        let cachePolicy: URLRequest.CachePolicy = request.asURLRequest().cachePolicy
+        let timeoutInterval: TimeInterval = request.asURLRequest().timeoutInterval
 
         XCTAssertEqual(contentTypeHeaderValue, "application/json")
         XCTAssertEqual(httpMethod, "GET")
@@ -22,7 +22,7 @@ class ApiRequestTests: XCTestCase {
 
     func testResponse_whenHasHttpResponseError_returnsApiErrorNetwork() {
         var apiError: ApiError?
-        let request: ProductsRequest = ProductsRequest()
+        let request: ProductsRequest = try! ProductsRequest()
         let response: HttpResponse = HttpResponseMother.emptyHttpResponse(withStatusCode: -1)
 
         let expectation = self.expectation(description: "")
@@ -40,7 +40,7 @@ class ApiRequestTests: XCTestCase {
 
     func testResponse_whenHasHttpResponseWithStatusCode400_returnsClientError() {
         var apiError: ApiError?
-        let request: ProductsRequest = ProductsRequest()
+        let request: ProductsRequest = try! ProductsRequest()
         let response: HttpResponse = HttpResponseMother.httpResponse(withStatusCode: 400)
 
         let expectation = self.expectation(description: "")
@@ -59,7 +59,7 @@ class ApiRequestTests: XCTestCase {
     func testResponse_whenHasHttpResponseWithValidData_returnsApiResponse() {
         var apiError: ApiError?
         var apiResponse: ApiResponse?
-        let request: ProductsRequest = ProductsRequest()
+        let request: ProductsRequest = try! ProductsRequest()
         let response: HttpResponse = HttpResponseMother.httpResponse(withStatusCode: 200)
 
         let expectation = self.expectation(description: "")

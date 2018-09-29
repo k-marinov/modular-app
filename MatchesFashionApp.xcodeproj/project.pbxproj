@@ -55,9 +55,10 @@
 		B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A8215ED60700E1EF83 /* ProductServiceTests.swift */; };
 		B6AEA7AB215ED6EC00E1EF83 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AA215ED6EC00E1EF83 /* ProductService.swift */; };
 		B6AEA7B7215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B6215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift */; };
-		B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */; };
+		B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequestTests.swift */; };
 		B6AEA7BA215F822700E1EF83 /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */; };
 		B6AEA7BB215F827D00E1EF83 /* ExchangeRateMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */; };
+		B6AEA7BE215F978500E1EF83 /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7BD215F978500E1EF83 /* CurrencyCode.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,7 +132,8 @@
 		B6AEA7AF215EDE3E00E1EF83 /* ExchangeRateResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResource.swift; sourceTree = "<group>"; };
 		B6AEA7B4215EDFBF00E1EF83 /* ExchangeRateMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateMother.swift; sourceTree = "<group>"; };
 		B6AEA7B6215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResourceSpecs.swift; sourceTree = "<group>"; };
-		B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
+		B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequestTests.swift; sourceTree = "<group>"; };
+		B6AEA7BD215F978500E1EF83 /* CurrencyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 		B6AEA743215D5F2600E1EF83 /* ExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7BC215F977800E1EF83 /* model */,
 				B6AEA7AE215EDDF600E1EF83 /* resource */,
 				B6AEA7AD215EDDEE00E1EF83 /* request */,
 				B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */,
@@ -502,9 +505,17 @@
 		B6AEA7B3215EDE7100E1EF83 /* request */ = {
 			isa = PBXGroup;
 			children = (
-				B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequest.swift */,
+				B6AEA7B8215F781A00E1EF83 /* ExchangeRateRequestTests.swift */,
 			);
 			path = request;
+			sourceTree = "<group>";
+		};
+		B6AEA7BC215F977800E1EF83 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7BD215F978500E1EF83 /* CurrencyCode.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
@@ -740,6 +751,7 @@
 				B6AEA791215ECB3800E1EF83 /* RouterCreatable.swift in Sources */,
 				B6AEA799215ECD7A00E1EF83 /* Router.swift in Sources */,
 				B6AEA78E215ECB3800E1EF83 /* Creatable.swift in Sources */,
+				B6AEA7BE215F978500E1EF83 /* CurrencyCode.swift in Sources */,
 				B63BF0D0215D553C00BB2554 /* AppDelegate.swift in Sources */,
 				B6AEA75B215D708F00E1EF83 /* PriceResource.swift in Sources */,
 			);
@@ -763,7 +775,7 @@
 				B6AEA7A9215ED60700E1EF83 /* ProductServiceTests.swift in Sources */,
 				B6AEA754215D671E00E1EF83 /* RxCollector.swift in Sources */,
 				B6AEA779215EBF8700E1EF83 /* HttpResponseMother.swift in Sources */,
-				B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequest.swift in Sources */,
+				B6AEA7B9215F781A00E1EF83 /* ExchangeRateRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

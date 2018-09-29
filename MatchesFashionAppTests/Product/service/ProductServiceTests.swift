@@ -24,7 +24,7 @@ class ProductServiceTests: XCTestCase {
         var products: [ProductResource] = [ProductResource]()
 
         let expectation = self.expectation(description: "")
-        service.findAllProducts(with: ProductsRequest())
+        service.findAllProducts(with: try! ProductsRequest())
             .subscribe(onNext: { newProducts in
                 products.append(contentsOf: newProducts)
                 expectation.fulfill()
@@ -41,7 +41,7 @@ class ProductServiceTests: XCTestCase {
         var apiError: ApiError?
 
         let expectation = self.expectation(description: "")
-        service.findAllProducts(with: ProductsRequest())
+        service.findAllProducts(with: try! ProductsRequest())
             .subscribe(onNext: { _ in
                 expectation.fulfill()
             }, onError: { error in
