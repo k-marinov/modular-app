@@ -20,7 +20,7 @@ struct ProductsRequest: ApiRequest {
     }
 
     private func buildUrl() -> URL?  {
-        var components = URLComponents(string: "http://matchesfashion.com")!
+        var components: URLComponents = URLComponents(string: "http://matchesfashion.com")!
         components.path = "/womens/shop"
         components.queryItems = [URLQueryItem(name: "format", value:"json")]
         return components.url

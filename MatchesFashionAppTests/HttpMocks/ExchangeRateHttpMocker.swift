@@ -2,7 +2,7 @@ import OHHTTPStubs
 
 @testable import MatchesFashionApp
 
-class ProductsHttpMocker {
+class ExchangeRateHttpMocker {
 
     static var scenario: Scenario!
 
@@ -26,16 +26,15 @@ class ProductsHttpMocker {
 
     private func response() -> OHHTTPStubsResponse {
         validateScenario()
-
-        if ProductsHttpMocker.scenario == Scenario.success {
+        if ExchangeRateHttpMocker.scenario == Scenario.success {
             return OHHTTPStubsResponse(
-                fileAtPath: OHPathForFile("products.json", type(of: self))!,
+                fileAtPath: OHPathForFile("exchange-rate.json", type(of: self))!,
                 statusCode: 200,
                 headers: ["Content-Type": "application/json"])
-        } else if ProductsHttpMocker.scenario == Scenario.fail {
+        } else if ExchangeRateHttpMocker.scenario == Scenario.fail {
             return OHHTTPStubsResponse(
                 fileAtPath: OHPathForFile("empty.json", type(of: self))!,
-                statusCode: 404,
+                statusCode: 400,
                 headers: ["Content-Type": "application/json"])
         }
         return OHHTTPStubsResponse(
@@ -45,14 +44,14 @@ class ProductsHttpMocker {
     }
 
     private func validateScenario() {
-        if ProductsHttpMocker.scenario == nil {
-            fatalError("ProductsHttpMocker.scenario can not be nil")
+        if ExchangeRateHttpMocker.scenario == nil {
+            fatalError("ExchangeRateHttpMocker.scenario can not be nil")
         }
     }
 
     private func isUrlRequestSuccess(with urlRequest: URLRequest) -> Bool {
         let url: String = urlRequest.url!.absoluteURL.absoluteString
-        return url.hasPrefix("http://matchesfashion.com/womens/shop?format=json")
+        return url.hasPrefix("https://free.currencyconverterapi.com/api/v6/convert?q=USD_GBP")
     }
 
 }

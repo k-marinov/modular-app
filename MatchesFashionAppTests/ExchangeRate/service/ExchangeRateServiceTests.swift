@@ -3,45 +3,46 @@ import RxSwift
 
 @testable import MatchesFashionApp
 
-class ProductServiceTests: XCTestCase {
+class ExchangeRateServiceTests: XCTestCase {
 
-    private let productsMocker: ProductsHttpMocker = ProductsHttpMocker()
-    private let service: ProductService = ProductService(creatable: Creator())
+    private let mocker: ExchangeRateHttpMocker = ExchangeRateHttpMocker()
+    private let service: ExchangeRateService = ExchangeRateService(creatable: Creator())
+    private let request: ExchangeRateRequest = try! ExchangeRateRequest(from: CurrencyCode.usd, to: CurrencyCode.gbp)
     private let disposeBag: DisposeBag = DisposeBag()
 
     override func setUp() {
         super.setUp()
-        productsMocker.setUpStubs()
+        mocker.setUpStubs()
     }
 
     override func tearDown() {
-        productsMocker.removeStubs()
+        mocker.removeStubs()
         super.tearDown()
     }
 
-    func testFindAllProducts_whenStatusCode200_returnsProducts() {
-        ProductsHttpMocker.scenario = Scenario.success
-        var products: [ProductResource] = [ProductResource]()
+    func testFindExchangeRate_whenStatusCode200_returnsRate() {
+        ExchangeRateHttpMocker.scenario = Scenario.success
+        var rate: Double?
 
         let expectation = self.expectation(description: "")
-        service.findAllProducts(with: try! ProductsRequest())
-            .subscribe(onNext: { newProducts in
-                products.append(contentsOf: newProducts)
+        service.findExchangeRate(with: request)
+            .subscribe(onNext: { newRate in
+                rate = newRate
                 expectation.fulfill()
             }, onError: { error in
                 expectation.fulfill()
             }).disposed(by: disposeBag)
         wait(for: [expectation], timeout: Constants.timeout)
 
-        XCTAssertEqual(products.count, 3)
+        XCTAssertEqual(rate, 1.302999)
     }
 
-    func testFindAllProducts_whenStatusCode401_returnsApiErrorClient() {
-        ProductsHttpMocker.scenario = Scenario.fail
+    func testFindExchangeRate_whenStatusCode401_returnsApiErrorClient() {
+        ExchangeRateHttpMocker.scenario = Scenario.fail
         var apiError: ApiError?
 
         let expectation = self.expectation(description: "")
-        service.findAllProducts(with: try! ProductsRequest())
+        service.findExchangeRate(with: request)
             .subscribe(onNext: { _ in
                 expectation.fulfill()
             }, onError: { error in

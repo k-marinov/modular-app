@@ -1,0 +1,13 @@
+{
+    "query": {
+        "count": 1
+    },
+    "results": {
+        "GBP_USD": {
+            "id": "GBP_USD",
+            "val": 1.302999,
+            "to": "USD",
+            "fr": "GBP"
+        }
+    }
+}

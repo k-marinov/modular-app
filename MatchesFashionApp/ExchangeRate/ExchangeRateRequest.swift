@@ -24,9 +24,10 @@ class ExchangeRateRequest: ApiRequest {
     }
 
     private func buildUrl(from fromCode: CurrencyCode, to toCode: CurrencyCode) -> URL?  {
-        var components = URLComponents(string: "https://free.currencyconverterapi.com")!
+        let value: String = fromCode.rawValue + "_" + toCode.rawValue
+        var components: URLComponents = URLComponents(string: "https://free.currencyconverterapi.com")!
         components.path = "/api/v6/convert"
-        components.queryItems = [URLQueryItem(name: "q", value: fromCode.rawValue + "_" + toCode.rawValue)]
+        components.queryItems = [URLQueryItem(name: "q", value: value)]
         return components.url
     }
 
