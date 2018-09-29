@@ -1,6 +1,6 @@
 import UIKit
 
-struct MatchesFashionAppRouter: Router {
+struct AppRouter: Router {
 
     private let productRouter: ProductRouter
 

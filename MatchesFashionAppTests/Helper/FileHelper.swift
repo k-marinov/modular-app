@@ -1,7 +1,5 @@
 import Foundation
 
-@testable import MatchesFashionApp
-
 class FileHelper {
 
     func createData(from filename: String, ofType: String) -> Data? {

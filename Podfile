@@ -8,6 +8,7 @@ def common_pods
   pod 'RxSwift', '4.3.0'
   pod 'RxCocoa', '4.3.0'
   pod 'SwiftyJSON', '4.1.0'
+  pod 'Kingfisher'
 end
 
 def test_pods

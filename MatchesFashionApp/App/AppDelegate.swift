@@ -3,7 +3,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private let appRouter: MatchesFashionAppRouter = MatchesFashionAppRouter(creatable: Creator())
+    private let appRouter: AppRouter = AppRouter(creatable: Creator())
     var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
     func application(

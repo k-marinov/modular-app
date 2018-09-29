@@ -1,4 +1,5 @@
 PODS:
+  - Kingfisher (4.10.0)
   - Nimble (7.3.0)
   - OHHTTPStubs/Core (6.1.0)
   - OHHTTPStubs/Default (6.1.0):
@@ -20,6 +21,7 @@ PODS:
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Nimble
   - OHHTTPStubs/Swift (= 6.1.0)
   - Quick
@@ -29,6 +31,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Kingfisher
     - Nimble
     - OHHTTPStubs
     - Quick
@@ -37,6 +40,7 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
   Nimble: c8d6a1f463701921c46de965c673e13cafa09196
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   RxSwift: a9717a34df3179fe63563f76e046ad345078dd3a
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: b96569f42ed7d9902542bf1782f54855b464a4ef
+PODFILE CHECKSUM: c742f7700e6ecbc0a927e73e8b98be47e0b5afee
 
 COCOAPODS: 1.5.3

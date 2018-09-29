@@ -5,7 +5,7 @@ struct ProductsRequest: ApiRequest {
     private(set) var httpMethod = HttpMethod.get
 
     func url() -> URL {
-        var components: URLComponents = URLComponents(string: "http://matchesfashion.com")!
+        var components: URLComponents = URLComponents(string: "http://www.matchesfashion.com")!
         components.path = "/womens/shop"
         components.queryItems = [URLQueryItem(name: "format", value:"json")]
         return components.url!
