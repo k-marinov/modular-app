@@ -13,7 +13,7 @@ class ExchangeRateRequestTests: XCTestCase {
         XCTAssertEqual(try! ExchangeRateRequest(from: CurrencyCode.gbp, to: CurrencyCode.usd).httpMethod, HttpMethod.get)
     }
 
-    func testResource_whenHasValidData_returnsMarvelCharactersResource() {
+    func testResource_whenHasValidData_returnsExchangeRateResource() {
         let httpResponse: HttpResponse = HttpResponseMother.httpResponse(withStatusCode: 200)
         let response: ApiResponse = try! ExchangeRateRequest(from: CurrencyCode.gbp, to: CurrencyCode.usd)
             .response(from: httpResponse)

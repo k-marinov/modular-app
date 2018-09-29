@@ -37,7 +37,7 @@ class ExchangeRateServiceTests: XCTestCase {
         XCTAssertEqual(rate, 1.302999)
     }
 
-    func testFindExchangeRate_whenStatusCode401_returnsApiErrorClient() {
+    func testFindExchangeRate_whenStatusCode400_returnsApiErrorClient() {
         ExchangeRateHttpMocker.scenario = Scenario.fail
         var apiError: ApiError?
 

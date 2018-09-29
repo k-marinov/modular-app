@@ -13,7 +13,7 @@ class ProductsRequestTests: XCTestCase {
         XCTAssertEqual(try! ProductsRequest().httpMethod, HttpMethod.get)
     }
 
-    func testResource_whenHasValidData_returnsMarvelCharactersResource() {
+    func testResource_whenHasValidData_returnsProductsResource() {
         let httpResponse: HttpResponse = HttpResponseMother.httpResponse(withStatusCode: 200)
         let response: ApiResponse = try! ProductsRequest().response(from: httpResponse)
 
