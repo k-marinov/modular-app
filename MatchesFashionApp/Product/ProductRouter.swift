@@ -9,9 +9,7 @@ struct ProductRouter: Router, ViewControllerCreatable {
     }
 
     func viewController() -> ProductsViewController {
-        return viewController(
-            with: productsViewModel,
-            viewControllerType: ProductsViewController.self) as! ProductsViewController
+        return viewController(with: productsViewModel, viewControllerType: ProductsViewController.self) as! ProductsViewController
     }
 
 }

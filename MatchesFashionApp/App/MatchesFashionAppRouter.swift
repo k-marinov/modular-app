@@ -8,7 +8,7 @@ struct MatchesFashionAppRouter: Router {
         productRouter = creatable.create(creatable: creatable)
     }
 
-    func setUpRoot(with window: UIWindow) -> UIWindow {
+    func setUpRoot(to window: UIWindow) -> UIWindow {
         window.rootViewController = navigationController(rootViewController: productRouter.viewController())
         window.makeKeyAndVisible()
         return window

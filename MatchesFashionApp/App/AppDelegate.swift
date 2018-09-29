@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if isProductionEnabled() {
-            _ = appRouter.setUpRoot(with: window!)
+            _ = appRouter.setUpRoot(to: window!)
         }
         return true
     }

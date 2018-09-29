@@ -72,6 +72,7 @@
 		B6AEA7DA215FB7BF00E1EF83 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7D9215FB7BF00E1EF83 /* ViewModel.swift */; };
 		B6AEA7DC215FB9AC00E1EF83 /* ModelableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7DB215FB9AC00E1EF83 /* ModelableViewController.swift */; };
 		B6AEA7DE215FB9F000E1EF83 /* ViewControllerCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7DD215FB9F000E1EF83 /* ViewControllerCreatable.swift */; };
+		B6AEA7E2215FC12100E1EF83 /* MatchesFashionAppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7E1215FC12100E1EF83 /* MatchesFashionAppRouterTests.swift */; };
 		CFE4CC1C6D3AEDB0FA16B29D /* Pods_MatchesFashionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B316CCDA97CB02E51774E7 /* Pods_MatchesFashionApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		B6AEA7D9215FB7BF00E1EF83 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B6AEA7DB215FB9AC00E1EF83 /* ModelableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelableViewController.swift; sourceTree = "<group>"; };
 		B6AEA7DD215FB9F000E1EF83 /* ViewControllerCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCreatable.swift; sourceTree = "<group>"; };
+		B6AEA7E1215FC12100E1EF83 /* MatchesFashionAppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFashionAppRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		B63BF0E3215D553E00BB2554 /* MatchesFashionAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA7DF215FC10100E1EF83 /* App */,
 				B6AEA77F215ECA5600E1EF83 /* Shared */,
 				B6AEA762215D8EA000E1EF83 /* Product */,
 				B6AEA7B1215EDE5E00E1EF83 /* ExchangeRate */,
@@ -581,6 +584,22 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		B6AEA7DF215FC10100E1EF83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7E0215FC10C00E1EF83 /* router */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B6AEA7E0215FC10C00E1EF83 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				B6AEA7E1215FC12100E1EF83 /* MatchesFashionAppRouterTests.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
 		E094C836CF9A72C01A92DD09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,6 +863,7 @@
 				B6AEA757215D676000E1EF83 /* ProductMother.swift in Sources */,
 				B6AEA7A1215ED0F400E1EF83 /* Constants.swift in Sources */,
 				B6AEA7C0215FA09700E1EF83 /* ExchangeRateHttpMocker.swift in Sources */,
+				B6AEA7E2215FC12100E1EF83 /* MatchesFashionAppRouterTests.swift in Sources */,
 				B6AEA7B7215F77BE00E1EF83 /* ExchangeRateResourceSpecs.swift in Sources */,
 				B6AEA765215D8EB600E1EF83 /* ProductsResourceSpec.swift in Sources */,
 				B6AEA782215ECA6700E1EF83 /* ApiResponseTests.swift in Sources */,

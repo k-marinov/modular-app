@@ -1,6 +1,6 @@
 import UIKit
 
-class ProductsViewController: UIViewController {
+class ProductsViewController: UIViewController, ModelableViewController {
 
     private(set) lazy var productViewModel: ProductsViewModel = {
         guard let model = self.viewModel as? ProductsViewModel else {
