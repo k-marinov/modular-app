@@ -2,9 +2,9 @@ import RxSwift
 
 protocol ApiRequest {
 
-    var url: URL! { get }
-
     var httpMethod: HttpMethod { get }
+
+    func url() -> URL
 
     func asURLRequest() throws -> URLRequest
 
@@ -17,7 +17,7 @@ protocol ApiRequest {
 extension ApiRequest {
 
     func asURLRequest() -> URLRequest {
-        return urlRequest(withUrl: url)
+        return urlRequest(with: url())
     }
 
     func response(from newResponse: HttpResponse) -> Observable<ApiResponse> {
@@ -37,7 +37,7 @@ extension ApiRequest {
         }
     }
 
-    private func urlRequest(withUrl url: URL) -> URLRequest {
+    private func urlRequest(with url: URL) -> URLRequest {
         var urlRequest: URLRequest = URLRequest(url: url)
         urlRequest.cachePolicy = URLRequest.CachePolicy.reloadIgnoringLocalCacheData
         urlRequest.timeoutInterval = 30.0

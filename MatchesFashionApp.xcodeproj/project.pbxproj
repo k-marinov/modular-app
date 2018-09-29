@@ -276,7 +276,6 @@
 				B6AEA7BC215F977800E1EF83 /* model */,
 				B6AEA7AE215EDDF600E1EF83 /* resource */,
 				B6AEA7AD215EDDEE00E1EF83 /* request */,
-				B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */,
 			);
 			path = ExchangeRate;
 			sourceTree = "<group>";
@@ -487,6 +486,7 @@
 		B6AEA7AD215EDDEE00E1EF83 /* request */ = {
 			isa = PBXGroup;
 			children = (
+				B6AEA74B215D61E100E1EF83 /* ExchangeRateRequest.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";

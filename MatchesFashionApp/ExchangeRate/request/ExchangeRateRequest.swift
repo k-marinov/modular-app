@@ -7,13 +7,16 @@ import Foundation
 class ExchangeRateRequest: ApiRequest {
 
     private(set) var httpMethod = HttpMethod.get
-    private(set) var url: URL!
+    private let fromCode: CurrencyCode
+    private let toCode: CurrencyCode
 
-    init(from fromCode: CurrencyCode, to toCode: CurrencyCode) throws {
-        guard let url: URL = buildUrl(from: fromCode, to: toCode) else {
-            throw ApiRequestError.invalidUrl
-        }
-        self.url = url
+    init(from fromCode: CurrencyCode, to toCode: CurrencyCode) {
+        self.fromCode = fromCode
+        self.toCode = toCode
+    }
+
+    func url() -> URL {
+        return buildUrl(from: fromCode, to: toCode)
     }
 
     func response(from newResponse: HttpResponse) -> ApiResponse {
@@ -23,12 +26,12 @@ class ExchangeRateRequest: ApiRequest {
             successHttpStatusCode: HttpStatusCode.ok)
     }
 
-    private func buildUrl(from fromCode: CurrencyCode, to toCode: CurrencyCode) -> URL?  {
+    private func buildUrl(from fromCode: CurrencyCode, to toCode: CurrencyCode) -> URL  {
         let value: String = fromCode.rawValue + "_" + toCode.rawValue
         var components: URLComponents = URLComponents(string: "https://free.currencyconverterapi.com")!
         components.path = "/api/v6/convert"
         components.queryItems = [URLQueryItem(name: "q", value: value)]
-        return components.url
+        return components.url!
     }
 
 }
