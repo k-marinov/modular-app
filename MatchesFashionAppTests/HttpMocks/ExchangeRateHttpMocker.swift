@@ -1,7 +1,5 @@
 import OHHTTPStubs
 
-@testable import MatchesFashionApp
-
 class ExchangeRateHttpMocker {
 
     static var scenario: Scenario!

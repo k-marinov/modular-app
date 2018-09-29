@@ -6,11 +6,9 @@ class ProductsViewModel: ViewModel {
     private let disposeBag: DisposeBag = DisposeBag()
     private let productService: ProductService
     private let exchangeRateService: ExchangeRateService
-
     private let loadProgress: BehaviorRelay<Bool> = BehaviorRelay<Bool>(value: false)
     private let reload: PublishSubject<Void> = PublishSubject<Void>()
-
-    private(set) var dataSource: CollectionViewDataSource = CollectionViewDataSource<ProductResource, ProductCell>()
+    private(set) var dataSource = CollectionViewDataSource<ProductResource, ProductCell>()
 
     required init(creatable: Creatable) {
         productService = creatable.create(creatable: creatable)

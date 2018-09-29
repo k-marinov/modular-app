@@ -20,7 +20,7 @@ class ProductResourceSpec: QuickSpec {
 
                     it("return mapped values") {
                         expect(resource?.name).to(equal("Floral-print silk-twill maxi dress "))
-                        expect(resource?.designerName).to(equal("Gucci"))
+                        expect(resource?.designer).to(equal("Gucci"))
                         expect(resource?.priceFormatted()).to(equal("£3,550"))
                         expect(resource?.imageUrl).to(equal(imageUrl))
                     }
@@ -33,7 +33,7 @@ class ProductResourceSpec: QuickSpec {
 
                     it("return default property values") {
                         expect(resource?.name).to(beEmpty())
-                        expect(resource?.designerName).to(beEmpty())
+                        expect(resource?.designer).to(beEmpty())
                         expect(resource?.priceFormatted()).to(equal("£0"))
                         expect(resource?.imageUrl).to(beNil())
                     }

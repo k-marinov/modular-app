@@ -22,7 +22,7 @@ class MockCreator: Creatable {
         let realClassKey: String = "\(S.self)"
         let mockType: Service.Type = mockServiceType(with: creatable, realClassKey: realClassKey)
 
-        addMock(key: "\(mockType)", value: mockType.init(with: creatable))
+        addMock(key: "\(mockType)", value: mockType.init(creatable: creatable))
         return mocks["\(mockType)"] as! S
     }
 

@@ -7,7 +7,7 @@ class ExchangeRateServiceTests: XCTestCase {
 
     private let mocker: ExchangeRateHttpMocker = ExchangeRateHttpMocker()
     private let service: ExchangeRateService = ExchangeRateService(creatable: Creator())
-    private let request: ExchangeRateRequest = try! ExchangeRateRequest(from: CurrencyCode.usd, to: CurrencyCode.gbp)
+    private let request: ExchangeRateRequest = ExchangeRateRequest(from: CurrencyCode.usd, to: CurrencyCode.gbp)
     private let disposeBag: DisposeBag = DisposeBag()
 
     override func setUp() {
