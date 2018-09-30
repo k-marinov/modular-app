@@ -1,2 +1,2 @@
-class Creator: Creatable {
+struct Creator: Creatable {
 }

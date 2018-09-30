@@ -4,7 +4,7 @@
 
 import Foundation
 
-class ExchangeRateRequest: ApiRequest {
+struct ExchangeRateRequest: ApiRequest {
 
     private let fromCurrency: Currency
     private(set) var httpMethod = HttpMethod.get

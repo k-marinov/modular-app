@@ -41,7 +41,6 @@
 		B6AEA792215ECB3800E1EF83 /* ServiceCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */; };
 		B6AEA793215ECB3800E1EF83 /* UtilityCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA78D215ECB3800E1EF83 /* UtilityCreatable.swift */; };
 		B6AEA795215ECBD700E1EF83 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA794215ECBD700E1EF83 /* Service.swift */; };
-		B6AEA797215ECD1600E1EF83 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA796215ECD1600E1EF83 /* Remote.swift */; };
 		B6AEA799215ECD7A00E1EF83 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA798215ECD7A00E1EF83 /* Router.swift */; };
 		B6AEA79C215ED06B00E1EF83 /* ApiRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA79B215ED06B00E1EF83 /* ApiRequestTests.swift */; };
 		B6AEA7A1215ED0F400E1EF83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AEA7A0215ED0F400E1EF83 /* Constants.swift */; };
@@ -141,7 +140,6 @@
 		B6AEA78C215ECB3700E1EF83 /* ServiceCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCreatable.swift; sourceTree = "<group>"; };
 		B6AEA78D215ECB3800E1EF83 /* UtilityCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityCreatable.swift; sourceTree = "<group>"; };
 		B6AEA794215ECBD700E1EF83 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		B6AEA796215ECD1600E1EF83 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
 		B6AEA798215ECD7A00E1EF83 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B6AEA79B215ED06B00E1EF83 /* ApiRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestTests.swift; sourceTree = "<group>"; };
 		B6AEA7A0215ED0F400E1EF83 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -502,7 +500,6 @@
 				B6AEA789215ECB3700E1EF83 /* Creator.swift */,
 				B6AEA785215ECAD800E1EF83 /* ApiClient.swift */,
 				B6AEA784215ECAD800E1EF83 /* HttpClient.swift */,
-				B6AEA796215ECD1600E1EF83 /* Remote.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -905,7 +902,6 @@
 				B6AEA76E215EBB7900E1EF83 /* HttpStatusCode.swift in Sources */,
 				B6AEA795215ECBD700E1EF83 /* Service.swift in Sources */,
 				B6AEA7CC215FA39A00E1EF83 /* ExchangeRateService.swift in Sources */,
-				B6AEA797215ECD1600E1EF83 /* Remote.swift in Sources */,
 				B6AEA7BA215F822700E1EF83 /* ExchangeRateResource.swift in Sources */,
 				B6BD055C215FC5B4000059F0 /* UICollectionView+Extension.swift in Sources */,
 				B6AEA78F215ECB3800E1EF83 /* Creator.swift in Sources */,

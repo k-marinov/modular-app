@@ -1,10 +1,10 @@
 import RxSwift
 
-class ApiClient {
+struct ApiClient {
 
     private let httpClient: HttpClient
 
-    required init(creatable: Creatable) {
+    init(creatable: Creatable) {
         httpClient = creatable.create()
     }
 

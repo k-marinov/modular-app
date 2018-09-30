@@ -1,6 +1,6 @@
 import RxSwift
 
-class HttpClient {
+struct HttpClient {
 
     func request(urlRequest: URLRequest) -> Observable<HttpResponse> {
         return Observable.create { observer in

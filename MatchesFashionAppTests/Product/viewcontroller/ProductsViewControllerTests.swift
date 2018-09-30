@@ -6,10 +6,10 @@ import Nimble
 
 class ProductsViewControllerTests: XCTestCase, ViewControllerCreatable {
 
-    let disposeBag: DisposeBag = DisposeBag()
-    var creator: MockCreator!
-    var viewModel: ProductsViewModel!
-    var viewController: ProductsViewController!
+    private let disposeBag: DisposeBag = DisposeBag()
+    private var creator: MockCreator!
+    private var viewModel: ProductsViewModel!
+    private var viewController: ProductsViewController!
 
     override func setUp() {
         super.setUp()

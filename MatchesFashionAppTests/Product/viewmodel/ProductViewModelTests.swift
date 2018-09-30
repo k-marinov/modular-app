@@ -84,6 +84,7 @@ class ProductsViewModelTests: XCTestCase {
         XCTAssertEqual(creator.find(MockExchangeRateService.self).isFindExchangeRateCalled, true)
         let updated = viewModel.dataSource.items.first as! ProductResource
         XCTAssertEqual(updated.priceFormatted(), "$5,325")
+        XCTAssertEqual(isLoading.results, [true, false])
         XCTAssertEqual(reloadData.results.count, 1)
     }
 
@@ -99,6 +100,7 @@ class ProductsViewModelTests: XCTestCase {
         XCTAssertEqual(creator.find(MockExchangeRateService.self).isFindExchangeRateCalled, true)
         let updated = viewModel.dataSource.items.first as! ProductResource
         XCTAssertEqual(updated.priceFormatted(), "£3,550")
+        XCTAssertEqual(isLoading.results, [true, false])
         XCTAssertEqual(reloadData.results.count, 0)
     }
 
