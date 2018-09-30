@@ -41,7 +41,7 @@ Main components of MVVM with Routers and Services architecture are
 
 • Remote  - Makes api request, convert response into different types (if needed)
 
-• Dao  -  Class or protocol for CRUD operations on local storage (if needed)
+• Repository / DAO   -  Class or protocol for CRUD operations on local storage (if needed)
 
 • Request - API request that holds the http method type, API response and resource 
 
