@@ -87,3 +87,36 @@ Main components of MVVM with Routers and Services architecture are
 
 - CurrencyExchangeRateResource
 
+
+## Dependencies
+
+
+**RxSwift / RxCocoa**
+
+• Concurrency 
+
+• Binding ui 
+
+• Functional reactive programming style
+
+• Allows easy testing capabilities 
+
+• It enables developer to write more immutable style of coding
+
+**OHTTPStubs**
+
+• For stubbing your network requests
+
+• It enables complex scenarios to be tested in isolation.
+
+• Useful for testing your service layer.
+
+**Kingfisher**
+
+• Image caching
+
+**SwiftyJSON**
+
+• JSON mapping
+
+• Easy to use for payloads where there are lots nested objects.
