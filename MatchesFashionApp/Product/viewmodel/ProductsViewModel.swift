@@ -21,7 +21,7 @@ class ProductsViewModel: ViewModel {
             .disposed(by: disposeBag)
     }
 
-    func updateExchangeRate(index: Int) -> Observable<CurrencyExchangeRate> {
+    private func updateExchangeRate(index: Int) -> Observable<CurrencyExchangeRate> {
         return Currency.find(index: index)
             .flatMap { [weak self] toCurrency -> Observable<CurrencyExchangeRate> in
                 guard let `self` = self else { return Observable.empty() }

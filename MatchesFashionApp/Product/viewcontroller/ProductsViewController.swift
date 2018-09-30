@@ -7,7 +7,7 @@ class ProductsViewController: UIViewController, ModelableViewController {
     private let disposeBag: DisposeBag = DisposeBag()
     @IBOutlet private(set) weak var collectionView: UICollectionView!
     @IBOutlet private(set) weak var activityIndicatorView: UIActivityIndicatorView!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet private(set) weak var segmentedControl: UISegmentedControl!
 
     private(set) lazy var productsViewModel: ProductsViewModel = {
         guard let model = self.viewModel as? ProductsViewModel else {
@@ -34,6 +34,7 @@ class ProductsViewController: UIViewController, ModelableViewController {
 
     private func bind() {
         segmentedControl.rx.selectedSegmentIndex
+            .skip(1)
             .bind(onNext: productsViewModel.updateExchangeRate)
             .disposed(by: disposeBag)
     }
