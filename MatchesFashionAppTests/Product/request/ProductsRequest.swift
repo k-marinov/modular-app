@@ -5,7 +5,7 @@ import XCTest
 class ProductsRequestTests: XCTestCase {
 
     func testHttpRequestUrl_whenHasValue_returnsUrl() {
-        let expectedUrl: URL? = URL(string: "http://www.matchesfashion.com/womens/shop?format=json")
+        let expectedUrl: URL? = URL(string: "https://www.matchesfashion.com/womens/shop?format=json")
 
         XCTAssertEqual(ProductsRequest().url(), expectedUrl)
     }

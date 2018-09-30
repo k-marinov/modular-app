@@ -7,6 +7,7 @@ class ProductsViewController: UIViewController, ModelableViewController {
     private let disposeBag: DisposeBag = DisposeBag()
     @IBOutlet private(set) weak var collectionView: UICollectionView!
     @IBOutlet private(set) weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
 
     private(set) lazy var productsViewModel: ProductsViewModel = {
         guard let model = self.viewModel as? ProductsViewModel else {
@@ -20,6 +21,7 @@ class ProductsViewController: UIViewController, ModelableViewController {
         super.viewDidLoad()
         setUp()
         subscribe()
+        bind()
         productsViewModel.loadProducts()
             .subscribe()
             .disposed(by: disposeBag)
@@ -28,6 +30,12 @@ class ProductsViewController: UIViewController, ModelableViewController {
     private func setUp() {
         setUpCollectionView()
         setUpNavigationBarTitle()
+    }
+
+    private func bind() {
+        segmentedControl.rx.selectedSegmentIndex
+            .bind(onNext: productsViewModel.updateExchangeRate)
+            .disposed(by: disposeBag)
     }
 
     private func subscribe() {
@@ -39,6 +47,14 @@ class ProductsViewController: UIViewController, ModelableViewController {
         productsViewModel.isLoading()
             .drive(activityIndicatorView.rx.isLoading)
             .disposed(by: disposeBag)
+
+
+        productsViewModel.currencies()
+            .subscribe(onNext: { [weak self] currencies in
+                currencies.forEach {
+                    self?.segmentedControl.setTitle($0.code, forSegmentAt: $0.rawValue)
+                }
+            }).disposed(by: disposeBag)
     }
 
     private func setUpCollectionView() {

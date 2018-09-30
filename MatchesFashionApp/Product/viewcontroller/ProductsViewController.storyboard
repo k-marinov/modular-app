@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qjB-1z-7ih">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="73" width="414" height="789"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aeo-c5-ge7">
                                     <size key="itemSize" width="300" height="356"/>
@@ -32,14 +32,26 @@
                                 <rect key="frame" x="188.66666666666666" y="434.66666666666669" width="37" height="37"/>
                                 <color key="color" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="53w-b8-bwm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="53w-b8-bwm" secondAttribute="trailing" id="1zc-eZ-WgY"/>
                             <constraint firstItem="qjB-1z-7ih" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9cI-Rc-oia"/>
                             <constraint firstItem="qjB-1z-7ih" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9oF-j6-fi0"/>
+                            <constraint firstItem="qjB-1z-7ih" firstAttribute="top" secondItem="53w-b8-bwm" secondAttribute="bottom" constant="1" id="Aaw-Wt-qQa"/>
                             <constraint firstItem="Wte-Pn-sVw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FfH-Gu-pgy"/>
-                            <constraint firstItem="qjB-1z-7ih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ad2-q6-UMk"/>
+                            <constraint firstItem="53w-b8-bwm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="J07-7N-hA9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qjB-1z-7ih" secondAttribute="bottom" id="cKr-eO-syS"/>
+                            <constraint firstItem="53w-b8-bwm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cwR-pg-cHx"/>
                             <constraint firstItem="Wte-Pn-sVw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lxP-HP-dVx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,11 +59,12 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="Wte-Pn-sVw" id="QSk-lM-H6l"/>
                         <outlet property="collectionView" destination="qjB-1z-7ih" id="nIg-5t-5U8"/>
+                        <outlet property="segmentedControl" destination="53w-b8-bwm" id="ehd-EJ-0VC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25.78125" y="31.640624999999996"/>
+            <point key="canvasLocation" x="24.637681159420293" y="31.473214285714285"/>
         </scene>
     </scenes>
 </document>

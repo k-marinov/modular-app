@@ -50,7 +50,7 @@ class ProductsHttpMocker {
 
     private func isUrlRequestSuccess(with urlRequest: URLRequest) -> Bool {
         let url: String = urlRequest.url!.absoluteURL.absoluteString
-        return url.hasPrefix("http://www.matchesfashion.com/womens/shop?format=json")
+        return url.hasPrefix("https://www.matchesfashion.com/womens/shop?format=json")
     }
 
 }

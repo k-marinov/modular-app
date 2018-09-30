@@ -8,9 +8,9 @@ class ExchangeRateService: Service {
         apiClient = creatable.create(creatable: creatable)
     }
 
-    func findExchangeRate(with request: ExchangeRateRequest) -> Observable<Double> {
+    func findCurrencyExchangeRate(with request: ExchangeRateRequest) -> Observable<CurrencyExchangeRate> {
         return apiClient.request(with: request)
-            .map { ($0.resource as! ExchangeRateResource).value }
+            .map { CurrencyExchangeRate(rate: ($0.resource as! ExchangeRateResource).value, currency: request.toCode) }
     }
 
 }

@@ -2,7 +2,7 @@ import SwiftyJSON
 
 struct ProductResource: Resource, ProductCellRepresentable {
 
-    private let price: PriceResource
+    private var price: PriceResource
     private(set) var name: String
     private(set) var designer: String
     private(set) var imageUrl: URL?
@@ -12,6 +12,11 @@ struct ProductResource: Resource, ProductCellRepresentable {
         designer = json["designer"]["name"].stringValue
         price = PriceResource(json: json["price"])
         imageUrl = url(from: json["primaryImageMap"]["medium"]["url"].stringValue)
+    }
+
+    mutating func setCurrencyExchangeRate(rate: CurrencyExchangeRate) -> ProductResource {
+        price.setCurrencyExchangeRate(rate: rate)
+        return self
     }
 
     func priceFormatted() -> String {

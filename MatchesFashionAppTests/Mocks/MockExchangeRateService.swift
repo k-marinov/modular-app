@@ -6,9 +6,9 @@ class MockExchangeRateService: ExchangeRateService {
 
     var isRequestSuccess: Bool = false
 
-    override func findExchangeRate(with request: ExchangeRateRequest) -> Observable<Double> {
+    override func findCurrencyExchangeRate(with request: ExchangeRateRequest) -> Observable<CurrencyExchangeRate> {
         if isRequestSuccess {
-            return Observable.just(1.5)
+            return Observable.just(CurrencyExchangeRate(rate: 1.5, currency: Currency.gbp))
         }
         return Observable.error(ApiError.client)
     }
