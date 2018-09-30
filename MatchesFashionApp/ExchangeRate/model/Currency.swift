@@ -25,6 +25,21 @@ enum Currency: Int, CaseIterable {
         }
     }
 
+    var symbol: String {
+        switch (self.rawValue) {
+        case 0:
+            return "£"
+        case 1:
+            return "$"
+        case 2:
+            return "€"
+        case 3:
+            return "¥"
+        default:
+            return ""
+        }
+    }
+
     static func findOrReturnFallback(code: String?) -> Currency {
         return Currency.allCases
             .filter { $0.code == code }

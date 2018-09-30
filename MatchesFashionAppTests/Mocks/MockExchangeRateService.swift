@@ -10,7 +10,7 @@ class MockExchangeRateService: ExchangeRateService {
     override func findCurrencyExchangeRate(with request: ExchangeRateRequest) -> Observable<CurrencyExchangeRate> {
         isFindExchangeRateCalled = true
         if isRequestSuccess {
-            return Observable.just(CurrencyExchangeRate(rate: 1.5, currency: Currency.gbp))
+            return Observable.just(CurrencyExchangeRate(rate: 1.5, currency: Currency.usd))
         }
         return Observable.error(ApiError.client)
     }

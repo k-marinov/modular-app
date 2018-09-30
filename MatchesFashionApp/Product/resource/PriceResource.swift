@@ -21,10 +21,11 @@ struct PriceResource: Resource {
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 0
         formatter.minimumIntegerDigits = 1
+        formatter.currencySymbol = currencyExchangeRate.currency.symbol
         formatter.numberStyle = .currency
-        formatter.currencyCode = currencyExchangeRate.currency.code
         formatter.locale = Locale.current
-        return formatter.string(from: NSNumber(value: value * currencyExchangeRate.rate)) ?? ""
+        let number = NSNumber(value: value * currencyExchangeRate.rate)
+        return formatter.string(from: number) ?? ""
     }
 
 }
