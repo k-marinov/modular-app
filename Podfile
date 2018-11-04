@@ -27,6 +27,21 @@ target 'ModularAppTests' do
   test_pods
 end
 
+target 'Product' do
+    workspace 'ModularApp.xcworkspace'
+    project 'Product/Product.xcodeproj'
+    inherit! :search_paths
+    common_pods
+end
+
+target 'ProductTests' do
+    workspace 'ModularApp.xcworkspace'
+    project 'Product/Product.xcodeproj'
+    inherit! :search_paths
+    common_pods
+    test_pods
+end
+
 target 'Commons' do
     workspace 'ModularApp.xcworkspace'
     project 'Commons/Commons.xcodeproj'
