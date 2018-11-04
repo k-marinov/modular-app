@@ -23,6 +23,7 @@
 		B611F4E9218F55C100824621 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B611F4E8218F55C100824621 /* Commons.framework */; };
 		B6441616218F476E00C69174 /* Product.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B644160C218F476D00C69174 /* Product.framework */; };
 		B644161B218F476E00C69174 /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B644161A218F476E00C69174 /* ProductTests.swift */; };
+		B656A9A7218F597200080F40 /* ExchangeRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B656A9A6218F597200080F40 /* ExchangeRate.framework */; };
 		F39971DC3863DA1FF0E1A85E /* Pods_Product.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0FC1ADA9877410A3158522 /* Pods_Product.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		B6441615218F476E00C69174 /* ProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B644161A218F476E00C69174 /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		B644161C218F476E00C69174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B656A9A6218F597200080F40 /* ExchangeRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExchangeRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84C245C1F91C190C075FCA2 /* Pods-ProductTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ProductTests/Pods-ProductTests.release.xcconfig"; sourceTree = "<group>"; };
 		D619594EDC42D4BC30717D7D /* Pods-Product.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Product.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Product/Pods-Product.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B656A9A7218F597200080F40 /* ExchangeRate.framework in Frameworks */,
 				B611F4E9218F55C100824621 /* Commons.framework in Frameworks */,
 				F39971DC3863DA1FF0E1A85E /* Pods_Product.framework in Frameworks */,
 			);
@@ -212,6 +215,7 @@
 		B8F6CDC93BABFD5D1468873E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B656A9A6218F597200080F40 /* ExchangeRate.framework */,
 				B611F4E8218F55C100824621 /* Commons.framework */,
 				6F0FC1ADA9877410A3158522 /* Pods_Product.framework */,
 				023E463382A2059B5B56A17B /* Pods_ProductTests.framework */,

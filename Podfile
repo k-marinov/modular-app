@@ -42,6 +42,21 @@ target 'ProductTests' do
     test_pods
 end
 
+target 'ExchangeRate' do
+    workspace 'ModularApp.xcworkspace'
+    project 'ExchangeRate/ExchangeRate.xcodeproj'
+    inherit! :search_paths
+    common_pods
+end
+
+target 'ExchangeRateTests' do
+    workspace 'ModularApp.xcworkspace'
+    project 'ExchangeRate/ExchangeRate.xcodeproj'
+    inherit! :search_paths
+    common_pods
+    test_pods
+end
+
 target 'Commons' do
     workspace 'ModularApp.xcworkspace'
     project 'Commons/Commons.xcodeproj'
