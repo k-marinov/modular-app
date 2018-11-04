@@ -17,11 +17,11 @@ def test_pods
   pod 'Nimble'
 end
 
-target 'MatchesFashionApp' do
+target 'ModularApp' do
   common_pods
 end
 
-target 'MatchesFashionAppTests' do
+target 'ModularAppTests' do
   inherit! :search_paths
   common_pods
   test_pods
