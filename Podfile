@@ -18,10 +18,12 @@ def test_pods
 end
 
 target 'ModularApp' do
+  workspace 'ModularApp.xcworkspace'
   common_pods
 end
 
 target 'ModularAppTests' do
+  workspace 'ModularApp.xcworkspace'
   inherit! :search_paths
   common_pods
   test_pods
@@ -37,6 +39,21 @@ end
 target 'ProductTests' do
     workspace 'ModularApp.xcworkspace'
     project 'Product/Product.xcodeproj'
+    inherit! :search_paths
+    common_pods
+    test_pods
+end
+
+target 'SellerApp' do
+    workspace 'ModularApp.xcworkspace'
+    project 'SellerApp/SellerApp.xcodeproj'
+    inherit! :search_paths
+    common_pods
+end
+
+target 'SellerAppTests' do
+    workspace 'ModularApp.xcworkspace'
+    project 'SellerApp/SellerApp.xcodeproj'
     inherit! :search_paths
     common_pods
     test_pods
