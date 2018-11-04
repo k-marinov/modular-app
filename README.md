@@ -1,22 +1,5 @@
-## OFFLINE MODE - Question Answer ##
 
-Offline caching would be implemented by using Codable protocol for each resource, In our case ProductReporitory or ProductDao class would 
-implement all CRUD operation required for saving products by page number on local storage.
-
-n order to handle caching for paginated resources
-
-1. Decide on the collection type that is required. 
-2. Dictionary collection type is ideal for storing paginated products, page number as the key and the products as the value. 
-3. Products would be encoded as a list of data and saved in local storage (User Defaults)
-4. When a products request fails in the Products service, depending on the caching policy, for example when the caching
-policy is able to recover on http status codes 500, 401, we would attempt to return any existing cached products by decoding them back to a list of 
-product resource and recover from cache on failing requests.
-5. In order to implement a generic caching abstraction, CRUD operations needs to be implemented in a generic way where local storage should not
-matter if it is User Defaults or another storage.
-6. Implementation of offline caching as mentioned here, would take around 8 -10 hours, depending on the requirements, either self expiring cache or
-FIFO queue with a limited size, would handle most of the simple caching requirements.
-
-# Matches Fashion App
+# Modular App
 
 ## Developer Prerequisites
 
@@ -57,8 +40,6 @@ Main components of MVVM with Routers and Services architecture are
 
 • Service - Handle business logic, make api request, read write to disk
 
-• Remote  - Makes api request, convert response into different types (if needed)
-
 • Repository / DAO   -  Class or protocol for CRUD operations on local storage (if needed)
 
 • Request - API request that holds the http method type, API response and resource 
@@ -68,7 +49,7 @@ Main components of MVVM with Routers and Services architecture are
 • Resource - equivalent DTO of JSON object
 
 
-## Matches Fashion App Drilldown of the classes
+## Modular App Drilldown of the classes
 
 **• App**
 
