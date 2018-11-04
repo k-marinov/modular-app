@@ -72,6 +72,13 @@ target 'CommonsTests' do
     test_pods
 end
 
+target 'TestHelpers' do
+    workspace 'ModularApp.xcworkspace'
+    project 'TestHelpers/TestHelpers.xcodeproj'
+    inherit! :search_paths
+    common_pods
+end
+
 # after pod install, override default configs for schemes or targets specified
 debug_schemes = ['Debug']
 

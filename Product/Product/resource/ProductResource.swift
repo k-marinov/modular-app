@@ -2,26 +2,26 @@ import SwiftyJSON
 import Commons
 import ExchangeRate
 
-struct ProductResource: Resource, ProductCellRepresentable {
+public struct ProductResource: Resource, ProductCellRepresentable {
 
     private var price: PriceResource
-    private(set) var name: String
-    private(set) var designer: String
-    private(set) var imageUrl: URL?
+    public private(set) var name: String
+    public private(set) var designer: String
+    public private(set) var imageUrl: URL?
 
-    init(json: JSON) {
+    public init(json: JSON) {
         name = json["name"].stringValue
         designer = json["designer"]["name"].stringValue
         price = PriceResource(json: json["price"])
         imageUrl = url(from: json["primaryImageMap"]["medium"]["url"].stringValue)
     }
 
-    mutating func setCurrencyExchangeRate(rate: CurrencyExchangeRate) -> ProductResource {
+    public mutating func setCurrencyExchangeRate(rate: CurrencyExchangeRate) -> ProductResource {
         price.setCurrencyExchangeRate(rate: rate)
         return self
     }
 
-    func priceFormatted() -> String {
+    public func priceFormatted() -> String {
         return price.formatted()
     }
 

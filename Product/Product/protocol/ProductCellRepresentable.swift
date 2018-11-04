@@ -1,7 +1,7 @@
 import Foundation
 import Commons
 
-protocol ProductCellRepresentable: CollectionViewItem {
+public protocol ProductCellRepresentable: CollectionViewItem {
 
     var name: String { get }
 

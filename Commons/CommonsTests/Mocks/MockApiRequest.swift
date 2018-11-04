@@ -1,7 +1,8 @@
 import Foundation
-import Commons
 
-public struct ProductsRequest: ApiRequest {
+@testable import Commons
+
+public struct MockApiRequest: ApiRequest {
 
     public private(set) var httpMethod = HttpMethod.get
 
@@ -14,7 +15,7 @@ public struct ProductsRequest: ApiRequest {
 
     public func response(from newResponse: HttpResponse) -> ApiResponse {
         return ApiResponse(
-            resourceType: ProductsResource.self,
+            resourceType: MockResource.self,
             httpResponse: newResponse,
             successHttpStatusCode: HttpStatusCode.ok)
     }

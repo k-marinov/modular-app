@@ -1,5 +1,6 @@
 import XCTest
 import Commons
+import Product
 
 @testable import ModularApp
 

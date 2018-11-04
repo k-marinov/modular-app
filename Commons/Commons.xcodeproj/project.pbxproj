@@ -10,7 +10,6 @@
 		99706F397922ED87A75173F2 /* Pods_Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59194D0D735EA6D88781C6 /* Pods_Commons.framework */; };
 		9DD04D311A503A5A993BC287 /* Pods_CommonsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8DD3C5620F05ED02314BE7 /* Pods_CommonsTests.framework */; };
 		B64415B7218F37F400C69174 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64415AD218F37F400C69174 /* Commons.framework */; };
-		B64415BC218F37F400C69174 /* CommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415BB218F37F400C69174 /* CommonsTests.swift */; };
 		B64415CF218F3B1F00C69174 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415CE218F3B1F00C69174 /* CollectionViewDataSource.swift */; };
 		B64415D1218F3B4F00C69174 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415D0218F3B4F00C69174 /* ApiError.swift */; };
 		B64415D4218F3B5800C69174 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415D2218F3B5800C69174 /* UICollectionView+Extension.swift */; };
@@ -35,6 +34,11 @@
 		B64415FB218F3B7A00C69174 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415F8218F3B7A00C69174 /* ApiClient.swift */; };
 		B64415FC218F3B7A00C69174 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415F9218F3B7A00C69174 /* Creator.swift */; };
 		B64415FD218F3B7A00C69174 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415FA218F3B7A00C69174 /* HttpClient.swift */; };
+		B665B62C218F8BE5005C517E /* ApiRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B665B62B218F8BE5005C517E /* ApiRequestsTests.swift */; };
+		B665B62E218F8BEB005C517E /* ApiResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B665B62D218F8BEB005C517E /* ApiResponseTests.swift */; };
+		B665B630218F8C71005C517E /* TestHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B665B62F218F8C71005C517E /* TestHelpers.framework */; };
+		B665B634218F8CA7005C517E /* MockResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B665B633218F8CA7005C517E /* MockResource.swift */; };
+		B665B637218F8D6F005C517E /* MockApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B665B636218F8D6F005C517E /* MockApiRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,6 @@
 		B64415AD218F37F400C69174 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64415B1218F37F400C69174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64415B6218F37F400C69174 /* CommonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B64415BB218F37F400C69174 /* CommonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonsTests.swift; sourceTree = "<group>"; };
 		B64415BD218F37F400C69174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64415CE218F3B1F00C69174 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		B64415D0218F3B4F00C69174 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -80,6 +83,11 @@
 		B64415F8218F3B7A00C69174 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B64415F9218F3B7A00C69174 /* Creator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
 		B64415FA218F3B7A00C69174 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B665B62B218F8BE5005C517E /* ApiRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestsTests.swift; sourceTree = "<group>"; };
+		B665B62D218F8BEB005C517E /* ApiResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponseTests.swift; sourceTree = "<group>"; };
+		B665B62F218F8C71005C517E /* TestHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B665B633218F8CA7005C517E /* MockResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResource.swift; sourceTree = "<group>"; };
+		B665B636218F8D6F005C517E /* MockApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiRequest.swift; sourceTree = "<group>"; };
 		B89694CD4994A5AF8F3605E5 /* Pods-Commons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Commons/Pods-Commons.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C38795DACEDAB4672EA12A /* Pods-Commons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commons.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Commons/Pods-Commons.release.xcconfig"; sourceTree = "<group>"; };
 		FF8DD3C5620F05ED02314BE7 /* Pods_CommonsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B665B630218F8C71005C517E /* TestHelpers.framework in Frameworks */,
 				B64415B7218F37F400C69174 /* Commons.framework in Frameworks */,
 				9DD04D311A503A5A993BC287 /* Pods_CommonsTests.framework in Frameworks */,
 			);
@@ -109,6 +118,7 @@
 		4FDA229C5036E3C64DAFE0C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B665B62F218F8C71005C517E /* TestHelpers.framework */,
 				8B59194D0D735EA6D88781C6 /* Pods_Commons.framework */,
 				FF8DD3C5620F05ED02314BE7 /* Pods_CommonsTests.framework */,
 			);
@@ -147,7 +157,8 @@
 		B64415BA218F37F400C69174 /* CommonsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B64415BB218F37F400C69174 /* CommonsTests.swift */,
+				B665B632218F8C91005C517E /* Shared */,
+				B665B631218F8C8B005C517E /* Mocks */,
 				B64415BD218F37F400C69174 /* Info.plist */,
 			);
 			path = CommonsTests;
@@ -230,6 +241,40 @@
 				B64415FA218F3B7A00C69174 /* HttpClient.swift */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		B665B629218F8BD3005C517E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B665B62B218F8BE5005C517E /* ApiRequestsTests.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B665B62A218F8BDB005C517E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B665B62D218F8BEB005C517E /* ApiResponseTests.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B665B631218F8C8B005C517E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B665B633218F8CA7005C517E /* MockResource.swift */,
+				B665B636218F8D6F005C517E /* MockApiRequest.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B665B632218F8C91005C517E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B665B62A218F8BDB005C517E /* model */,
+				B665B629218F8BD3005C517E /* protocol */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		E9D4D83C6C8659AF0570BE93 /* Pods */ = {
@@ -466,7 +511,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B64415BC218F37F400C69174 /* CommonsTests.swift in Sources */,
+				B665B637218F8D6F005C517E /* MockApiRequest.swift in Sources */,
+				B665B62C218F8BE5005C517E /* ApiRequestsTests.swift in Sources */,
+				B665B62E218F8BEB005C517E /* ApiResponseTests.swift in Sources */,
+				B665B634218F8CA7005C517E /* MockResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
