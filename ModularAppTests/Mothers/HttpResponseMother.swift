@@ -1,4 +1,5 @@
 import Foundation
+import Commons
 
 @testable import ModularApp
 

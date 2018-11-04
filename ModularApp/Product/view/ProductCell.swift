@@ -1,5 +1,7 @@
 import UIKit
-import Kingfisher
+import Nuke
+import Commons
+import Foundation
 
 class ProductCell: UICollectionViewCell, CollectionViewCell {
 
@@ -51,12 +53,12 @@ class ProductCell: UICollectionViewCell, CollectionViewCell {
     private func setUpImage(with representable: ProductCellRepresentable) {
         _ = representable.imageUrl
             .map { imageUrl in
-                imageView.kf.setImage(with: imageUrl)
+                Nuke.loadImage(with: imageUrl, into: imageView)
         }
     }
 
     private func setUpCellBorderStyle() {
-        contentView.layer.borderColor = Color(red: 0.8, green: 0.8, blue: 0.8, alpha: 1.0).cgColor
+        contentView.layer.borderColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1.0).cgColor
         contentView.layer.borderWidth = 0.3
     }
 

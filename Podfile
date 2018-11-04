@@ -8,7 +8,7 @@ def common_pods
   pod 'RxSwift', '4.3.0'
   pod 'RxCocoa', '4.3.0'
   pod 'SwiftyJSON', '4.1.0'
-  pod 'Kingfisher'
+  pod 'Nuke', '7.5.1'
 end
 
 def test_pods
@@ -27,6 +27,21 @@ target 'ModularAppTests' do
   test_pods
 end
 
+target 'Commons' do
+    workspace 'ModularApp.xcworkspace'
+    project 'Commons/Commons.xcodeproj'
+    inherit! :search_paths
+    common_pods
+end
+
+target 'CommonsTests' do
+    workspace 'ModularApp.xcworkspace'
+    project 'Commons/Commons.xcodeproj'
+    inherit! :search_paths
+    common_pods
+    test_pods
+end
+
 # after pod install, override default configs for schemes or targets specified
 debug_schemes = ['Debug']
 
@@ -35,6 +50,10 @@ post_install do |installer|
         target.build_configurations.each do |config|
           if debug_schemes.include? config.name
             # enable faster compilation by building only the active arch for debug schemes
+            config.build_settings['GCC_OPTIMIZATION_LEVEL'] = '0';
+            config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone';
+            config.build_settings['SWIFT_COMPILATION_MODE'] = 'wholemodule';
+            config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf';
             config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
             config.build_settings['ENABLE_TESTABILITY'] = 'YES'
           end

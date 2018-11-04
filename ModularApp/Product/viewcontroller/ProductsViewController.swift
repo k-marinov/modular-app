@@ -1,6 +1,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Commons
 
 class ProductsViewController: UIViewController, ModelableViewController {
 

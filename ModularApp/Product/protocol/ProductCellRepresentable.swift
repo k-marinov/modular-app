@@ -1,4 +1,5 @@
 import Foundation
+import Commons
 
 protocol ProductCellRepresentable: CollectionViewItem {
 

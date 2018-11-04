@@ -1,4 +1,5 @@
 import RxSwift
+import Commons
 
 @testable import ModularApp
 

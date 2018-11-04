@@ -3,6 +3,7 @@
  **/
 
 import Foundation
+import Commons
 
 struct ExchangeRateRequest: ApiRequest {
 

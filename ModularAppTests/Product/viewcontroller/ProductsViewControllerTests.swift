@@ -1,6 +1,7 @@
 import XCTest
 import RxSwift
 import Nimble
+import Commons
 
 @testable import ModularApp
 

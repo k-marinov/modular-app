@@ -1,3 +1,5 @@
+import Commons
+
 @testable import ModularApp
 
 class MockCreator: Creatable {

@@ -1,4 +1,5 @@
 import SwiftyJSON
+import Commons
 
 struct ProductsResource: Resource {
 
