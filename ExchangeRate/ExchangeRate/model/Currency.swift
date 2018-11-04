@@ -1,6 +1,6 @@
 import RxSwift
 
-enum Currency: Int, CaseIterable {
+public enum Currency: Int, CaseIterable {
 
     case gbp
 
@@ -10,7 +10,7 @@ enum Currency: Int, CaseIterable {
 
     case jpy
 
-    var code: String {
+    public var code: String {
         switch (self.rawValue) {
         case 0:
             return "GBP"
@@ -25,7 +25,7 @@ enum Currency: Int, CaseIterable {
         }
     }
 
-    var symbol: String {
+    public var symbol: String {
         switch (self.rawValue) {
         case 0:
             return "£"
@@ -40,13 +40,13 @@ enum Currency: Int, CaseIterable {
         }
     }
 
-    static func findOrReturnFallback(code: String?) -> Currency {
+    public static func findOrReturnFallback(code: String?) -> Currency {
         return Currency.allCases
             .filter { $0.code == code }
             .first ?? Currency.gbp
     }
 
-    static func find(index: Int) -> Observable<Currency> {
+    public static func find(index: Int) -> Observable<Currency> {
         if index > -1 && index < Currency.allCases.count {
             return Observable.just(Currency.allCases[index])
         }

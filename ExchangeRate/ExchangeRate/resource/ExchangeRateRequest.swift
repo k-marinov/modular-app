@@ -5,22 +5,22 @@
 import Foundation
 import Commons
 
-struct ExchangeRateRequest: ApiRequest {
+public struct ExchangeRateRequest: ApiRequest {
 
     private let fromCurrency: Currency
-    private(set) var httpMethod = HttpMethod.get
-    private(set) var toCurrency: Currency
+    public private(set) var httpMethod = HttpMethod.get
+    public private(set) var toCurrency: Currency
 
-    init(from fromCurrency: Currency, to toCurrency: Currency) {
+    public init(from fromCurrency: Currency, to toCurrency: Currency) {
         self.fromCurrency = fromCurrency
         self.toCurrency = toCurrency
     }
 
-    func url() -> URL {
+    public func url() -> URL {
         return buildUrl(from: fromCurrency, to: toCurrency)
     }
 
-    func response(from newResponse: HttpResponse) -> ApiResponse {
+    public func response(from newResponse: HttpResponse) -> ApiResponse {
         return ApiResponse(
             resourceType: ExchangeRateResource.self,
             httpResponse: newResponse,

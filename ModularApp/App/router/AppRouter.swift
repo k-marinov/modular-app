@@ -1,5 +1,6 @@
 import UIKit
 import Commons
+import Product
 
 struct AppRouter: Router {
 

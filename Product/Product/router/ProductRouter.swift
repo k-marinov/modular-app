@@ -1,16 +1,16 @@
 import UIKit
 import Commons
 
-struct ProductRouter: Router, ViewControllerCreatable {
+public struct ProductRouter: Router, ViewControllerCreatable {
 
     private let productsViewModel: ProductsViewModel
 
-    init(creatable: Creatable) {
+    public init(creatable: Creatable) {
         productsViewModel = ProductsViewModel(creatable: creatable)
     }
 
 
-    func viewController() -> ProductsViewController {
+    public func viewController() -> ProductsViewController {
         return viewController(
             with: productsViewModel,
             viewControllerType: ProductsViewController.self) as! ProductsViewController

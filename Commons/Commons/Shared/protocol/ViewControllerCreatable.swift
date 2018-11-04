@@ -18,8 +18,12 @@ extension ViewControllerCreatable {
     }
 
     private func viewController<VC: UIViewController>(with type: VC.Type) -> UIViewController {
-        let name: String = String(describing: type)
-        let storyboard: UIStoryboard = UIStoryboard(name: name, bundle: nil)
+        let split = "\(type)".split(separator: ".").last ?? ""
+
+        let name: String = String(describing: split)
+        let storyboardBundle = Bundle(for: type)
+
+        let storyboard: UIStoryboard = UIStoryboard(name: name, bundle: storyboardBundle)
         return storyboard.instantiateViewController(withIdentifier: name) as! VC
     }
 

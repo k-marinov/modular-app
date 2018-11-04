@@ -1,5 +1,6 @@
 import SwiftyJSON
 import Commons
+import ExchangeRate
 
 struct ProductResource: Resource, ProductCellRepresentable {
 

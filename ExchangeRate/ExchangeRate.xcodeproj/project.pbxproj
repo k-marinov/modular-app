@@ -10,6 +10,12 @@
 		4A3134AD34B3E8CBB724C1F2 /* Pods_ExchangeRateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5828794CCBFC3E7C7B7D8514 /* Pods_ExchangeRateTests.framework */; };
 		B611F4FE218F58B200824621 /* ExchangeRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B611F4F4218F58B200824621 /* ExchangeRate.framework */; };
 		B611F503218F58B200824621 /* ExchangeRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611F502218F58B200824621 /* ExchangeRateTests.swift */; };
+		B656A9AD218F59C800080F40 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A9AC218F59C800080F40 /* Currency.swift */; };
+		B656A9AF218F59D000080F40 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A9AE218F59D000080F40 /* ExchangeRateRequest.swift */; };
+		B656A9B2218F59D600080F40 /* ExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A9B0218F59D600080F40 /* ExchangeRateResource.swift */; };
+		B656A9B3218F59D600080F40 /* CurrencyExchangeRateResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A9B1218F59D600080F40 /* CurrencyExchangeRateResource.swift */; };
+		B656A9B7218F59F600080F40 /* ExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656A9B6218F59F600080F40 /* ExchangeRateService.swift */; };
+		B656A9C5218F60B900080F40 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B656A9C4218F60B900080F40 /* Commons.framework */; };
 		C298EA0B83FAA4841B064908 /* Pods_ExchangeRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EF78B1BEE5D2C800730332 /* Pods_ExchangeRate.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,18 @@
 		B611F4FD218F58B200824621 /* ExchangeRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B611F502218F58B200824621 /* ExchangeRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTests.swift; sourceTree = "<group>"; };
 		B611F504218F58B200824621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B656A9AC218F59C800080F40 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		B656A9AE218F59D000080F40 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
+		B656A9B0218F59D600080F40 /* ExchangeRateResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateResource.swift; sourceTree = "<group>"; };
+		B656A9B1218F59D600080F40 /* CurrencyExchangeRateResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRateResource.swift; sourceTree = "<group>"; };
+		B656A9B6218F59F600080F40 /* ExchangeRateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateService.swift; sourceTree = "<group>"; };
+		B656A9B8218F5A5500080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9BA218F5C4800080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9BC218F5C6000080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9BE218F5EDA00080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9C0218F603000080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9C2218F604C00080F40 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B656A9C4218F60B900080F40 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14E4BE1AA0CAF787424790D /* Pods-ExchangeRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRate.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExchangeRate/Pods-ExchangeRate.release.xcconfig"; sourceTree = "<group>"; };
 		C71607A3DF19BCE4181D8435 /* Pods-ExchangeRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRate.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ExchangeRate/Pods-ExchangeRate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B656A9C5218F60B900080F40 /* Commons.framework in Frameworks */,
 				B611F4FE218F58B200824621 /* ExchangeRate.framework in Frameworks */,
 				4A3134AD34B3E8CBB724C1F2 /* Pods_ExchangeRateTests.framework in Frameworks */,
 			);
@@ -61,6 +80,13 @@
 		3C6A9CE57F7B3572675FB9E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B656A9C4218F60B900080F40 /* Commons.framework */,
+				B656A9C2218F604C00080F40 /* Nimble.framework */,
+				B656A9C0218F603000080F40 /* Commons.framework */,
+				B656A9BE218F5EDA00080F40 /* Commons.framework */,
+				B656A9BC218F5C6000080F40 /* Commons.framework */,
+				B656A9BA218F5C4800080F40 /* Commons.framework */,
+				B656A9B8218F5A5500080F40 /* Commons.framework */,
 				86EF78B1BEE5D2C800730332 /* Pods_ExchangeRate.framework */,
 				5828794CCBFC3E7C7B7D8514 /* Pods_ExchangeRateTests.framework */,
 			);
@@ -90,6 +116,9 @@
 		B611F4F6218F58B200824621 /* ExchangeRate */ = {
 			isa = PBXGroup;
 			children = (
+				B656A9AB218F59BA00080F40 /* service */,
+				B656A9AA218F59B000080F40 /* resource */,
+				B656A9A9218F59A700080F40 /* request */,
 				B656A9A8218F598C00080F40 /* model */,
 				B611F4F8218F58B200824621 /* Info.plist */,
 			);
@@ -108,8 +137,34 @@
 		B656A9A8218F598C00080F40 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				B656A9AC218F59C800080F40 /* Currency.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		B656A9A9218F59A700080F40 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B656A9B0218F59D600080F40 /* ExchangeRateResource.swift */,
+				B656A9B1218F59D600080F40 /* CurrencyExchangeRateResource.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B656A9AA218F59B000080F40 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B656A9AE218F59D000080F40 /* ExchangeRateRequest.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B656A9AB218F59BA00080F40 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				B656A9B6218F59F600080F40 /* ExchangeRateService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		D05951FBAD376996FFA035D9 /* Pods */ = {
@@ -314,6 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B656A9B7218F59F600080F40 /* ExchangeRateService.swift in Sources */,
+				B656A9AF218F59D000080F40 /* ExchangeRateRequest.swift in Sources */,
+				B656A9AD218F59C800080F40 /* Currency.swift in Sources */,
+				B656A9B2218F59D600080F40 /* ExchangeRateResource.swift in Sources */,
+				B656A9B3218F59D600080F40 /* CurrencyExchangeRateResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +399,7 @@
 		B611F506218F58B200824621 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -388,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,6 +464,7 @@
 		B611F507218F58B200824621 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -446,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -472,6 +534,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,6 +562,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ExchangeRate/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -2,8 +2,12 @@ import UIKit
 
 public extension UICollectionView {
 
-    func registerCellNib(with identifier: String) {
-        self.register(UINib(nibName: identifier, bundle: nil), forCellWithReuseIdentifier: identifier)
+    func registerCellNib<CELL: UICollectionViewCell>(with type: CELL.Type) {
+   // func registerCellNib(with identifier: String, type: ) {
+        let split = "\(type)".split(separator: ".").last ?? ""
+        let name: String = String(describing: split)
+        let bundle = Bundle(for: type)
+        self.register(UINib(nibName: name, bundle: bundle), forCellWithReuseIdentifier: name)
     }
 
 }

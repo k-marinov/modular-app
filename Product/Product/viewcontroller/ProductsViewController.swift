@@ -3,7 +3,7 @@ import RxSwift
 import RxCocoa
 import Commons
 
-class ProductsViewController: UIViewController, ModelableViewController {
+public class ProductsViewController: UIViewController, ModelableViewController {
 
     private let disposeBag: DisposeBag = DisposeBag()
     @IBOutlet private(set) weak var collectionView: UICollectionView!
@@ -16,9 +16,9 @@ class ProductsViewController: UIViewController, ModelableViewController {
         }
         return model
     }()
-    var viewModel: ViewModel!
+    public var viewModel: ViewModel!
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         setUp()
         subscribe()
@@ -60,7 +60,7 @@ class ProductsViewController: UIViewController, ModelableViewController {
     }
 
     private func setUpCollectionView() {
-        collectionView.registerCellNib(with: ProductCell.identifier)
+        collectionView.registerCellNib(with: ProductCell.self)
         setUpCollectionViewDataSource()
         setUpCollectionViewLayout()
     }

@@ -1,6 +1,7 @@
 import RxCocoa
 import RxSwift
 import Commons
+import ExchangeRate
 
 class ProductsViewModel: ViewModel {
 

@@ -1,11 +1,11 @@
 import SwiftyJSON
 import Commons
 
-struct ExchangeRateResource: Resource {
+public struct ExchangeRateResource: Resource {
 
-    let value: Double
+    public let value: Double
 
-    init(json: JSON) {
+    public init(json: JSON) {
         value = json["results"]
             .dictionary?
             .first?.value["val"]
