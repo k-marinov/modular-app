@@ -247,7 +247,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = MatchesFashion;
+				ORGANIZATIONNAME = "KERAN MARINOV LTD";
 				TargetAttributes = {
 					B63BF0CB215D553C00BB2554 = {
 						CreatedOnToolsVersion = 10.0;

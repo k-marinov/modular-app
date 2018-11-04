@@ -63,6 +63,36 @@
                ReferencedContainer = "container:ModularApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B64415B5218F37F400C69174"
+               BuildableName = "CommonsTests.xctest"
+               BlueprintName = "CommonsTests"
+               ReferencedContainer = "container:Commons/Commons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B611F4FC218F58B200824621"
+               BuildableName = "ExchangeRateTests.xctest"
+               BlueprintName = "ExchangeRateTests"
+               ReferencedContainer = "container:ExchangeRate/ExchangeRate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B6441614218F476E00C69174"
+               BuildableName = "ProductTests.xctest"
+               BlueprintName = "ProductTests"
+               ReferencedContainer = "container:Product/Product.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
          <CommandLineArgument
