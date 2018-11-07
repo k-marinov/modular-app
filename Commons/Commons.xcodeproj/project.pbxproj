@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		99706F397922ED87A75173F2 /* Pods_Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59194D0D735EA6D88781C6 /* Pods_Commons.framework */; };
 		9DD04D311A503A5A993BC287 /* Pods_CommonsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8DD3C5620F05ED02314BE7 /* Pods_CommonsTests.framework */; };
+		B63C2C1C219375FC00755E87 /* MultiCellCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C2C1B219375FC00755E87 /* MultiCellCollectionViewDataSource.swift */; };
+		B63C2C1E219376DF00755E87 /* DataSourceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C2C1D219376DF00755E87 /* DataSourceConfiguration.swift */; };
+		B63C2C202193777400755E87 /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C2C1F2193777400755E87 /* CellConfiguration.swift */; };
 		B64415B7218F37F400C69174 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64415AD218F37F400C69174 /* Commons.framework */; };
 		B64415CF218F3B1F00C69174 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415CE218F3B1F00C69174 /* CollectionViewDataSource.swift */; };
 		B64415D1218F3B4F00C69174 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64415D0218F3B4F00C69174 /* ApiError.swift */; };
@@ -55,6 +58,9 @@
 		2B93E289D65C30BCBCDAC2CD /* Pods-CommonsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonsTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CommonsTests/Pods-CommonsTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A97CD640CCC8535FF4EB35A /* Pods-CommonsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonsTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CommonsTests/Pods-CommonsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B59194D0D735EA6D88781C6 /* Pods_Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63C2C1B219375FC00755E87 /* MultiCellCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCellCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		B63C2C1D219376DF00755E87 /* DataSourceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceConfiguration.swift; sourceTree = "<group>"; };
+		B63C2C1F2193777400755E87 /* CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfiguration.swift; sourceTree = "<group>"; };
 		B64415AD218F37F400C69174 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64415B1218F37F400C69174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64415B6218F37F400C69174 /* CommonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				B64415CE218F3B1F00C69174 /* CollectionViewDataSource.swift */,
+				B63C2C1B219375FC00755E87 /* MultiCellCollectionViewDataSource.swift */,
+				B63C2C1D219376DF00755E87 /* DataSourceConfiguration.swift */,
+				B63C2C1F2193777400755E87 /* CellConfiguration.swift */,
 			);
 			path = datasource;
 			sourceTree = "<group>";
@@ -483,8 +492,10 @@
 				B64415EC218F3B7100C69174 /* ViewModel.swift in Sources */,
 				B64415F5218F3B7100C69174 /* ModelableViewController.swift in Sources */,
 				B64415EE218F3B7100C69174 /* Creatable.swift in Sources */,
+				B63C2C1E219376DF00755E87 /* DataSourceConfiguration.swift in Sources */,
 				B64415F4218F3B7100C69174 /* CollectionViewCell.swift in Sources */,
 				B64415DA218F3B6100C69174 /* HttpResponse.swift in Sources */,
+				B63C2C1C219375FC00755E87 /* MultiCellCollectionViewDataSource.swift in Sources */,
 				B64415F7218F3B7100C69174 /* ApiRequest.swift in Sources */,
 				B64415D4218F3B5800C69174 /* UICollectionView+Extension.swift in Sources */,
 				B64415F1218F3B7100C69174 /* RouterCreatable.swift in Sources */,
@@ -492,6 +503,7 @@
 				B64415F0218F3B7100C69174 /* ServiceCreatable.swift in Sources */,
 				B64415FD218F3B7A00C69174 /* HttpClient.swift in Sources */,
 				B64415ED218F3B7100C69174 /* Resource.swift in Sources */,
+				B63C2C202193777400755E87 /* CellConfiguration.swift in Sources */,
 				B64415FB218F3B7A00C69174 /* ApiClient.swift in Sources */,
 				B64415F6218F3B7100C69174 /* ViewControllerCreatable.swift in Sources */,
 				B64415CF218F3B1F00C69174 /* CollectionViewDataSource.swift in Sources */,

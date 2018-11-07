@@ -11,16 +11,40 @@ class ProductsViewModel: ViewModel {
     private let loadProgress: PublishSubject<Bool> = PublishSubject<Bool>()
     private let reload: PublishSubject<Void> = PublishSubject<Void>()
     private(set) var dataSource = CollectionViewDataSource<ProductResource, ProductCell>()
+    private(set) var source: MultiCellCollectionViewDataSource!
 
     required init(creatable: Creatable) {
         productService = creatable.create(creatable: creatable)
         exchangeRateService = creatable.create(creatable: creatable)
+        source = MultiCellCollectionViewDataSource(configuration: configuration())
     }
 
     func updateExchangeRate(index: Int) {
         updateExchangeRate(index: index)
             .subscribe()
             .disposed(by: disposeBag)
+    }
+
+    func configuration() -> DataSourceConfiguration {
+        let configuration: DataSourceConfiguration = DataSourceConfiguration(
+            builder: DataSourceConfiguration.Builder { builder in
+            builder.configurations = self.cellConfigurations()
+        })
+        return configuration
+    }
+
+    private func cellConfigurations() -> [String: CellConfiguration<CollectionCell>] {
+        let configurations = [
+            "\(ProductResource.self)": CellConfiguration<CollectionCell>(
+                reuseIdentifier: ProductCell.identifier,
+                cellType: ProductCell.self),
+            
+            "\(ProductResource.self)": CellConfiguration<CollectionCell>(
+                reuseIdentifier: ProductNewCell.identifier,
+                cellType: ProductNewCell.self)
+        ]
+        return configurations
+
     }
 
     private func updateExchangeRate(index: Int) -> Observable<Void> {

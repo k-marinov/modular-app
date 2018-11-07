@@ -4,6 +4,8 @@ import ExchangeRate
 
 public struct ProductResource: Resource, ProductCellRepresentable {
 
+    public var id: String = "\(ProductResource.self)"
+
     private var price: PriceResource
     public private(set) var name: String
     public private(set) var designer: String

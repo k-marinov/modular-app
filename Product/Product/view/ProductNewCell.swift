@@ -3,9 +3,9 @@ import Nuke
 import Commons
 import Foundation
 
-class ProductCell: CollectionCell, CollectionViewCell {
+class ProductNewCell: CollectionCell, CollectionViewCell {
 
-    static var identifier: String = "\(ProductCell.self)"
+    static var identifier: String = "\(ProductNewCell.self)"
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var designerLabel: UILabel!
@@ -26,7 +26,7 @@ class ProductCell: CollectionCell, CollectionViewCell {
     }
 
     override func reuseIdentifier() -> String {
-        return ProductCell.identifier
+        return ProductNewCell.identifier
     }
 
     override func configureCell(with collectionViewItem: CollectionViewItem) {
